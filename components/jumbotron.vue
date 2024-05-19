@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      class="bg-center bg-no-repeat bg-cover bg-[url('bgJumbo.jpg')] bg-gray-700 bg-blend-multiply"
+      class="bg-center bg-no-repeat min-h-[100vh] bg-cover bg-[url('bgJumbo.jpg')] bg-gray-700 bg-blend-multiply"
     >
       <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1

@@ -14,8 +14,8 @@
           </h5>
         </a>
         <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-          Temukan kreasi paling baru dan eksklusif dalam desain grafis baju
-          kami. Dari gaya yang trendi hingga konsep yang unik
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+          praesentium.
         </p>
       </div>
       <div
@@ -29,9 +29,8 @@
           </h5>
         </a>
         <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-          Temukan pengalaman personalisasi tak terbatas dengan layanan custom
-          desain kami. Ciptakan pakaian yang unik sesuai dengan gaya dan selera
-          Anda.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          magni modi similique, ipsa a veritatis maiores ratione et aut dolores.
         </p>
       </div>
     </div>
