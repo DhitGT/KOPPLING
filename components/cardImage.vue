@@ -2,7 +2,7 @@
   <div>
     <a
       href="#"
-      class="flex flex-row items-center bg-white border border-gray-200 rounded-lg shadow w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+      class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
     >
       <div
         class="w-48 h-full overflow-hidden rounded-t-lg rounded-none rounded-s-lg"
