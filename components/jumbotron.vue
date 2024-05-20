@@ -1,9 +1,16 @@
 <template>
   <div>
     <section
-      class="bg-center bg-no-repeat min-h-[100vh] bg-cover bg-[url('bgJumbo.jpg')] bg-gray-700 bg-blend-multiply"
+      class="relative min-h-[100vh] pt-24 md:pt-0 transition-opacity duration-500 ease-in-out"
     >
-      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+      <div
+        :style="{ backgroundImage: `url(${currentBackground})` }"
+        class="absolute inset-0 bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply transition-opacity duration-1000 ease-in-out"
+        :class="{ 'opacity-0': fadingOut, 'opacity-100': !fadingOut }"
+      ></div>
+      <div
+        class="relative z-10 px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56"
+      >
         <h1
           class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
         >
@@ -20,7 +27,7 @@
         >
           <a
             href="#"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-900"
           >
             Get started
             <svg
@@ -50,3 +57,44 @@
     </section>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      backgrounds: [
+        'bgJumbo.jpg',
+        'bgJumbo2.jpg',
+        'bgJumbo3.jpg',
+        'bgJumbo4.jpg',
+        'bgJumbo5.jpg',
+        // Add more image URLs here
+      ],
+      currentBackgroundIndex: 0,
+      fadingOut: false,
+    }
+  },
+  computed: {
+    currentBackground() {
+      return this.backgrounds[this.currentBackgroundIndex]
+    },
+  },
+  methods: {
+    changeBackground() {
+      this.fadingOut = true
+      setTimeout(() => {
+        this.currentBackgroundIndex =
+          (this.currentBackgroundIndex + 1) % this.backgrounds.length
+        this.fadingOut = false
+      }, 1000) // Match this duration with the CSS animation duration
+    },
+  },
+  mounted() {
+    setInterval(this.changeBackground, 5000) // Change background every 10 seconds
+  },
+}
+</script>
+<style scoped>
+.section {
+  transition: opacity 1s ease-in-out;
+}
+</style>
