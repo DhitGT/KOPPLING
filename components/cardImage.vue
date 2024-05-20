@@ -17,14 +17,9 @@
         >
           Lorem ipsum dolor sit amet.
         </h5>
-        <div
-          class="overflow-y-scroll md:overflow-auto max-h-[5vh] md:max-h-max"
-        >
+        <div class="overflow-y-clip md:overflow-auto max-h-[5vh] md:max-h-max">
           <p class="mb-3 font-normal md:text-sm text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui
-            rerum quos in illo dignissimos debitis sunt! Reprehenderit ullam
-            doloremque cum, atque molestiae autem nostrum nulla perferendis
-            architecto vel porro?
+            Lorem ipsum dolor sit amet consectetur rerum quos Selengkapnya..
           </p>
         </div>
       </div>

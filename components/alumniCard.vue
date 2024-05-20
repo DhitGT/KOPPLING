@@ -2,11 +2,11 @@
   <div
     class="min-w-fit md:max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700"
   >
-    <div class="p-5">
+    <div class="p-5 pb-0">
       <div class="flex items-center">
         <div class="flex-shrink-0">
           <img
-            class="w-8 h-8 rounded-full"
+            class="w-10 h-10 rounded-full"
             src="https://placehold.co/300"
             alt="Bonnie image"
           />
@@ -17,7 +17,10 @@
         </div>
       </div>
     </div>
-    <div href="#" class="overflow-hidden w-full pa-2">
+    <div href="#" class="overflow-hidden w-full pa-2 pt-0">
+      <v-icon class="fixed top-10 left-4" color="grey"
+        >mdi-image-multiple</v-icon
+      >
       <img
         class="rounded-lg w-full aspect-square"
         src="https://placehold.co/300"

@@ -26,10 +26,12 @@
           class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
         >
           <a
-            href="#"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-900"
+            :href="whatsappLink"
+            target="_blank"
+            style="color: white"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800"
           >
-            Get started
+            <span class="text-white"> Join Koppling </span>
             <svg
               class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
               aria-hidden="true"
@@ -50,7 +52,7 @@
             href="#"
             class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
           >
-            Learn more
+            Pelajari Lebih Lanjut
           </a>
         </div>
       </div>
@@ -71,9 +73,16 @@ export default {
       ],
       currentBackgroundIndex: 0,
       fadingOut: false,
+      phoneNumber: '6285718251092', // Replace with your phone number
+      message: 'Saya mau join Koppling',
     }
   },
+
   computed: {
+    whatsappLink() {
+      const encodedMessage = encodeURIComponent(this.message)
+      return `https://wa.me/${this.phoneNumber}?text=${encodedMessage}`
+    },
     currentBackground() {
       return this.backgrounds[this.currentBackgroundIndex]
     },
