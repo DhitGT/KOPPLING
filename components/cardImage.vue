@@ -19,7 +19,8 @@
         </h5>
         <div class="overflow-y-clip md:overflow-auto max-h-[5vh] md:max-h-max">
           <p class="mb-3 font-normal md:text-sm text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur rerum quos Selengkapnya..
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            Selengkapnya...
           </p>
         </div>
       </div>
