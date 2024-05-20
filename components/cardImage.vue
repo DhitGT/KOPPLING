@@ -2,7 +2,7 @@
   <div>
     <a
       href="#"
-      class="flex flex-col lg:flex-row items-center rounded-lg shadow w-[70vw] border md:w-full border-gray-700 bg-gray-900 hover:bg-gray-700"
+      class="flex flex-col lg:flex-row items-center rounded-lg shadow w-[70vw] border md:w-max border-gray-700 bg-gray-900 hover:bg-gray-700"
     >
       <div class="md:w-full pa-2 md:h-full overflow-hidden rounded-lg">
         <img
@@ -17,10 +17,12 @@
         >
           Lorem ipsum dolor sit amet.
         </h5>
-        <div class="overflow-y-clip md:overflow-auto max-h-[5vh] md:max-h-max">
+        <div
+          class="overflow-y-scroll md:overflow-auto max-h-[5vh] md:max-h-max"
+        >
           <p class="mb-3 font-normal md:text-sm text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            Selengkapnya...
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui
+            rerum quos
           </p>
         </div>
       </div>
