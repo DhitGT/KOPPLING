@@ -1,8 +1,10 @@
 <template>
   <div>
-    <a
+    <dialog-kegiatan @close="handleClose" :show="dialog.show"></dialog-kegiatan>
+    <div
+      @click="handleClick"
       href="#"
-      class="flex flex-col lg:flex-row items-center rounded-lg shadow w-[70vw] border md:w-max border-gray-700 bg-gray-900 hover:bg-gray-700"
+      class="flex flex-col lg:flex-row items-center rounded-lg shadow w-[70vw] border md:w-max border-gray-700 bg-gray-800 hover:bg-gray-700"
     >
       <div class="md:w-full pa-2 md:h-full overflow-hidden rounded-lg">
         <img
@@ -26,6 +28,25 @@
           </p>
         </div>
       </div>
-    </a>
+    </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      dialog: {
+        show: false,
+      },
+    }
+  },
+  methods: {
+    handleClick() {
+      this.dialog.show = true
+    },
+    handleClose() {
+      this.dialog.show = false
+    },
+  },
+}
+</script>
