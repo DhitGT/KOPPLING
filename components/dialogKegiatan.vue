@@ -15,7 +15,7 @@
         </v-toolbar>
         <v-container>
           <section
-            class="relative bg-center bg-no-repeat rounded-xl bg-cover bg-blend-multiply bg-[url('../static/bgJumbo3.jpg')]"
+            class="relative bg-center bg-no-repeat rounded-xl bg-cover bg-blend-multiply bg-[url('../static/bgJumbo2.jpg')]"
           >
             <div
               class="absolute rounded-xl inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-black"
