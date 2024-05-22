@@ -13,28 +13,61 @@
             <v-icon>mdi-close</v-icon>
           </v-btn>
         </v-toolbar>
-        <v-container>
-          <section
-            class="relative bg-center bg-no-repeat rounded-xl bg-cover bg-blend-multiply bg-[url('../static/bgJumbo2.jpg')]"
-          >
-            <div
-              class="absolute rounded-xl inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-black"
-            ></div>
-            <v-img
-              class="fixed top-4 rounded-full w-8 h-8 left-4"
-              color="grey"
-              src="kopplingLogo.png"
-            />
-            <div
-              class="flex flex-col px-4 mx-auto max-w-screen-xl h-full py-24 lg:py-56 relative"
+        <v-container class="flex flex-col md:gap-6 md:flex-row">
+          <div>
+            <section
+              class="relative bg-center bg-no-repeat rounded-t-xl bg-cover bg-blend-multiply bg-[url('../static/bgJumbo2.jpg')]"
             >
-              <span
-                class="text-xl mt-auto absolute bottom-7 opacity-90 font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+              <div
+                class="absolute rounded-t-xl inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-black"
+              ></div>
+              <v-img
+                class="fixed top-4 rounded-full w-8 h-8 left-4"
+                color="grey"
+                src="kopplingLogo.png"
+              />
+              <div
+                class="flex flex-col px-4 mx-auto max-w-screen-xl h-full py-24 lg:py-56 relative"
               >
-                Judul Kegiatan nya
-              </span>
+                <span
+                  class="text-xl mt-auto absolute bottom-7 opacity-90 font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-4xl"
+                >
+                  Judul Kegiatan nya
+                </span>
+              </div>
+            </section>
+            <div class="detail">
+              <div>
+                <span class="text-gray-300"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt, dicta illum reprehenderit cum corrupti odit vel
+                  quidem consequuntur quisquam. Deleniti?</span
+                >
+              </div>
+              <div class="flex gap-2 text-gray-300 mt-2">
+                <v-icon small>mdi-map-marker</v-icon>
+                <span>Mandalawangi, Bogor</span>
+              </div>
+              <div class="flex gap-2 text-gray-300">
+                <v-icon small>mdi-calendar-outline</v-icon>
+                <span>19 juni 2024</span>
+              </div>
             </div>
-          </section>
+          </div>
+          <div>
+            <div class="font-bold text-xl my-6 md:text-3xl lg:text-4xl">
+              Galery
+            </div>
+            <div class="galery grid grid-cols-3 gap-2 md:grid-cols-4">
+              <div
+                :key="`galery-${i}`"
+                class="rounded-lg border border-gray-700"
+                v-for="(item, i) in galery"
+              >
+                <v-img class="rounded-lg" :src="item.url"></v-img>
+              </div>
+            </div>
+          </div>
         </v-container>
       </v-card>
     </v-dialog>
@@ -66,6 +99,32 @@ export default {
     notifications: false,
     sound: true,
     widgets: false,
+    galery: [
+      {
+        url: 'https://placehold.co/300',
+      },
+      {
+        url: 'https://placehold.co/300',
+      },
+      {
+        url: 'https://placehold.co/300',
+      },
+      {
+        url: 'https://placehold.co/300',
+      },
+      {
+        url: 'https://placehold.co/300',
+      },
+      {
+        url: 'https://placehold.co/300',
+      },
+      {
+        url: 'https://placehold.co/300',
+      },
+      {
+        url: 'https://placehold.co/300',
+      },
+    ],
   }),
   methods: {
     konfirmasiBtn() {
