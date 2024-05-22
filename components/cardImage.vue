@@ -8,8 +8,8 @@
     >
       <div class="md:w-full pa-2 md:h-full overflow-hidden rounded-lg">
         <img
-          class="object-cover md:w-full rounded-lg md:h-full"
-          src="https://placehold.co/900"
+          class="object-cover aspect-square md:w-full rounded-lg md:h-full"
+          :src="item.imgUrl"
           alt=""
         />
       </div>
@@ -17,14 +17,17 @@
         <h5
           class="mb-2 md:text-2xl text-sm font-bold tracking-tight text-white"
         >
-          Lorem ipsum dolor sit amet.
+          {{ item.title }}
         </h5>
         <div
           class="overflow-y-scroll md:overflow-auto max-h-[5vh] md:max-h-max"
         >
           <p class="mb-3 font-normal md:text-sm text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia qui
-            rerum quos
+            {{
+              item.descript.length > 50
+                ? item.descript.slice(0, 50) + ' Baca Selengkapnya..'
+                : item.descript
+            }}
           </p>
         </div>
       </div>
@@ -33,6 +36,11 @@
 </template>
 <script>
 export default {
+  props: {
+    item: {
+      type: Object,
+    },
+  },
   data() {
     return {
       dialog: {

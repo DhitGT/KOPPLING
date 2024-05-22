@@ -14,11 +14,49 @@
       <div
         class="wrapper flex w-max md:grid gap-6 justify-items-stretch md:grid-cols-2 rounded-lg p-2 content-left self-center"
       >
-        <card-image />
-        <card-image />
-        <card-image />
-        <card-image />
+        <card-image
+          v-for="(item, i) in itemActivities"
+          :item="item"
+          :key="`activity-${i}`"
+        />
       </div>
     </v-container>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      itemActivities: [
+        {
+          title: 'Koppling outbond',
+          gen: 'IV',
+          imgUrl: 'bgJumbo.jpg',
+          action:
+            'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+          descript:
+            'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
+        },
+        {
+          title: 'Camping',
+          gen: 'VII',
+          imgUrl: 'bgJumbo2.jpg',
+          action:
+            'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+          descript:
+            'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
+        },
+        {
+          title: 'Koppling Fest',
+          gen: 'IX',
+          imgUrl: 'bgJumbo3.jpg',
+          action:
+            'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+          descript:
+            'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
+        },
+      ],
+    }
+  },
+}
+</script>
