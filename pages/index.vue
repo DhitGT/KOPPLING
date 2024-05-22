@@ -2,8 +2,8 @@
   <div>
     <navibar />
     <jumbotron />
-    <about-us></about-us>
-    <activities />
-    <alumni />
+    <about-us id="about-us"></about-us>
+    <activities id="activities" />
+    <alumni id="alumni" />
   </div>
 </template>
