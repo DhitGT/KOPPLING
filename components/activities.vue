@@ -31,6 +31,8 @@ export default {
         {
           title: 'Koppling outbond',
           gen: 'IV',
+          location: 'Setu, Bogor',
+          date: '1 Juni 2023',
           imgUrl: 'bgJumbo.jpg',
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
@@ -40,6 +42,8 @@ export default {
         {
           title: 'Camping',
           gen: 'VII',
+          location: 'Mandalawangi, Bogor',
+          date: '1 Maret 2023',
           imgUrl: 'bgJumbo2.jpg',
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
@@ -49,6 +53,8 @@ export default {
         {
           title: 'Koppling Fest',
           gen: 'IX',
+          location: 'SMKN 2 Bekasi, Bekasi',
+          date: '1 Juni 2024',
           imgUrl: 'bgJumbo3.jpg',
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',

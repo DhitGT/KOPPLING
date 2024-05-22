@@ -1,6 +1,10 @@
 <template>
   <div>
-    <dialog-kegiatan @close="handleClose" :show="dialog.show"></dialog-kegiatan>
+    <dialog-kegiatan
+      @close="handleClose"
+      :item="item"
+      :show="dialog.show"
+    ></dialog-kegiatan>
     <div
       @click="handleClick"
       href="#"

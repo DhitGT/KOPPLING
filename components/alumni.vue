@@ -17,10 +17,7 @@
       >
         <alumni-card
           v-for="(item, i) in itemAlumni"
-          :name="item.name"
-          :gen="item.gen"
-          :img="item.imgUrl"
-          :action="item.action"
+          :item="item"
           :key="`alumni-${i}`"
         />
       </div>
@@ -33,25 +30,28 @@ export default {
     return {
       itemAlumni: [
         {
-          name: 'Koppling',
-          gen: 'IV',
-          imgUrl: 'bgJumbo.jpg',
+          name: '@choirul_rizall',
+          gen: 'Gen VI',
+          imgUrl: 'choirulrizal.jpg',
           action:
-            'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+            'https://www.instagram.com/p/Ci8GVCKvUjK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+          profilePic: 'https://placehold.co/300',
         },
         {
           name: 'Koppling',
-          gen: 'VII',
+          gen: 'Gen X',
           imgUrl: 'bgJumbo2.jpg',
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+          profilePic: 'https://placehold.co/300',
         },
         {
           name: 'Koppling',
-          gen: 'IX',
+          gen: 'Gen X',
           imgUrl: 'bgJumbo3.jpg',
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+          profilePic: 'https://placehold.co/300',
         },
       ],
     }

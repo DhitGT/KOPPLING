@@ -16,7 +16,15 @@
         <v-container class="flex flex-col md:gap-6 md:flex-row">
           <div>
             <section
-              class="relative bg-center bg-no-repeat rounded-t-xl bg-cover bg-blend-multiply bg-[url('../static/bgJumbo2.jpg')]"
+              :class="[
+                'relative',
+                'bg-center',
+                'bg-no-repeat',
+                'rounded-t-xl',
+                'bg-cover',
+                'bg-blend-multiply',
+              ]"
+              :style="{ backgroundImage: `url(${item.imgUrl})` }"
             >
               <div
                 class="absolute rounded-t-xl inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-black"
@@ -32,25 +40,21 @@
                 <span
                   class="text-xl mt-auto absolute bottom-7 opacity-90 font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-4xl"
                 >
-                  Judul Kegiatan nya
+                  {{ item.title }}
                 </span>
               </div>
             </section>
             <div class="detail">
               <div>
-                <span class="text-gray-300"
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt, dicta illum reprehenderit cum corrupti odit vel
-                  quidem consequuntur quisquam. Deleniti?</span
-                >
+                <span class="text-gray-300">{{ item.descript }}</span>
               </div>
               <div class="flex gap-2 text-gray-300 mt-2">
                 <v-icon small>mdi-map-marker</v-icon>
-                <span>Mandalawangi, Bogor</span>
+                <span>{{ item.location }}</span>
               </div>
               <div class="flex gap-2 text-gray-300">
                 <v-icon small>mdi-calendar-outline</v-icon>
-                <span>19 juni 2024</span>
+                <span>{{ item.date }}</span>
               </div>
             </div>
           </div>
@@ -64,7 +68,10 @@
                 class="rounded-lg border border-gray-700"
                 v-for="(item, i) in galery"
               >
-                <v-img class="rounded-lg" :src="item.url"></v-img>
+                <v-img
+                  class="rounded-lg"
+                  :src="'https://placehold.co/300'"
+                ></v-img>
               </div>
             </div>
           </div>
@@ -91,6 +98,9 @@ export default {
     loading: {
       type: Boolean,
       default: false,
+    },
+    item: {
+      type: Object,
     },
   },
   data: () => ({
