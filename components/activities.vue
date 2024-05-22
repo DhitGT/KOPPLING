@@ -41,7 +41,7 @@ export default {
           galery: [],
         },
         {
-          title: 'Camping',
+          title: 'Camping Ceria',
           gen: 'VII',
           location: 'Mandalawangi, Bogor',
           date: '1 Maret 2023',

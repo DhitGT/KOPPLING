@@ -25,6 +25,7 @@
                 'bg-blend-multiply',
               ]"
               :style="{ backgroundImage: `url(${item.imgUrl})` }"
+              @click="openImageDialog(item.imgUrl)"
             >
               <div
                 class="absolute rounded-t-xl inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-black"
@@ -60,13 +61,14 @@
           </div>
           <div class="md:w-2/3">
             <div class="font-bold text-xl my-6 md:text-3xl lg:text-4xl">
-              Galery
+              Gallery
             </div>
-            <div class="galery grid grid-cols-3 gap-2 md:grid-cols-4">
+            <div class="gallery grid grid-cols-3 gap-2 md:grid-cols-4">
               <div
-                :key="`galery-${i}`"
-                class="rounded-lg border border-gray-700"
+                :key="`gallery-${i}`"
+                class="rounded-lg border border-gray-700 cursor-pointer"
                 v-for="(item, i) in item.galery"
+                @click="openImageDialog(item)"
               >
                 <v-img
                   class="rounded-lg object-cover aspect-square"
@@ -78,29 +80,39 @@
         </v-container>
       </v-card>
     </v-dialog>
+
+    <!-- Dialog for fullscreen image -->
+    <v-dialog v-model="imageDialog" fullscreen hide-overlay>
+      <v-card>
+        <v-toolbar dark color="#1f2937">
+          <v-btn icon dark @click="closeImageDialog">
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+        </v-toolbar>
+        <v-img :src="selectedImage" contain max-height="90vh">
+          <template v-slot:append>
+            <v-card-actions>
+              <v-spacer></v-spacer>
+              <v-btn icon dark @click="closeImageDialog">
+                <v-icon>mdi-close</v-icon>
+              </v-btn>
+            </v-card-actions>
+          </template>
+        </v-img>
+      </v-card>
+    </v-dialog>
   </v-row>
 </template>
+
 <script>
 export default {
   props: {
+    item: {
+      type: Object,
+    },
     show: {
       type: Boolean,
       default: false,
-    },
-    type: {
-      type: String,
-      default: 'success',
-    },
-    text: {
-      type: String,
-      default: '',
-    },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
-    item: {
-      type: Object,
     },
   },
   data: () => ({
@@ -116,27 +128,20 @@ export default {
       {
         url: 'https://placehold.co/300',
       },
-      {
-        url: 'https://placehold.co/300',
-      },
-      {
-        url: 'https://placehold.co/300',
-      },
-      {
-        url: 'https://placehold.co/300',
-      },
-      {
-        url: 'https://placehold.co/300',
-      },
-      {
-        url: 'https://placehold.co/300',
-      },
-      {
-        url: 'https://placehold.co/300',
-      },
+      // Other gallery items...
     ],
+    imageDialog: false,
+    selectedImage: '',
   }),
   methods: {
+    openImageDialog(imageUrl) {
+      this.selectedImage = imageUrl
+      this.imageDialog = true
+    },
+    closeImageDialog() {
+      this.selectedImage = ''
+      this.imageDialog = false
+    },
     konfirmasiBtn() {
       this.$emit('confirm')
     },
