@@ -3,7 +3,7 @@
     <v-container>
       <div class="flex flex-col items-center justify-center">
         <span class="text-4xl font-bold mb-5">Aktivitas Kami</span>
-        <p class="mb-3 font-normal text-lg text-gray-400">
+        <p class="mb-3 font-normal text-lgs text-gray-400">
           Koppling itu ngapain aja sih kak?. Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Nah Dibawah ini ada detail
           kegiatan-kegiatan yang kita lakuin nih.
@@ -38,6 +38,7 @@ export default {
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
           descript:
             'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
+          galery: [],
         },
         {
           title: 'Camping',
@@ -49,6 +50,16 @@ export default {
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
           descript:
             'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
+          galery: [
+            'mandala1.jpg',
+            'mandala2.jpg',
+            'mandala3.jpg',
+            'mandala4.jpg',
+            'mandala5.jpg',
+            'mandala6.jpg',
+            'mandala7.jpg',
+            'mandala8.jpg',
+          ],
         },
         {
           title: 'Koppling Fest',
@@ -60,6 +71,7 @@ export default {
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
           descript:
             'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
+          galery: [],
         },
       ],
     }

@@ -14,7 +14,7 @@
           </v-btn>
         </v-toolbar>
         <v-container class="flex flex-col md:gap-6 md:flex-row">
-          <div>
+          <div class="md:w-1/3">
             <section
               :class="[
                 'relative',
@@ -58,7 +58,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="md:w-2/3">
             <div class="font-bold text-xl my-6 md:text-3xl lg:text-4xl">
               Galery
             </div>
@@ -66,11 +66,11 @@
               <div
                 :key="`galery-${i}`"
                 class="rounded-lg border border-gray-700"
-                v-for="(item, i) in galery"
+                v-for="(item, i) in item.galery"
               >
                 <v-img
-                  class="rounded-lg"
-                  :src="'https://placehold.co/300'"
+                  class="rounded-lg object-cover aspect-square"
+                  :src="item"
                 ></v-img>
               </div>
             </div>
