@@ -8,7 +8,7 @@
     <div
       @click="handleClick"
       href="#"
-      class="flex flex-col lg:flex-row items-center rounded-lg shadow w-[70vw] border md:w-max border-gray-700 bg-gray-800 hover:bg-gray-700"
+      class="flex flex-col lg:flex-row items-center rounded-lg shadow w-[70vw] border md:w-max border-gray-700 bg-gray-800 hover:bg-gray-700 cursor-pointer"
     >
       <div class="md:w-full pa-2 md:h-full overflow-hidden rounded-lg">
         <img
@@ -34,10 +34,18 @@
             }}
           </p>
         </div>
+        <button
+          @click="handleClick"
+          class="text-white text-sm hover:text-gray-300"
+        >
+          Lihat Detail
+        </button>
+        <!-- Added button for viewing details -->
       </div>
     </div>
   </div>
 </template>
+
 <script>
 export default {
   props: {
