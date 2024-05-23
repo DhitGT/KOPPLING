@@ -38,7 +38,16 @@ export default {
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
           descript:
             'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
-          galery: [],
+          galery: [
+            'outb1.jpg',
+            'outb2.jpg',
+            'outb3.jpg',
+            'outb4.jpg',
+            'outb5.jpg',
+            'outb6.jpg',
+            'outb7.jpg',
+            'outb8.jpg',
+          ],
         },
         {
           title: 'Camping Ceria',
@@ -59,6 +68,13 @@ export default {
             'mandala6.jpg',
             'mandala7.jpg',
             'mandala8.jpg',
+            'mandala9.jpg',
+            'mandala10.jpg',
+            'mandala11.jpg',
+            'mandala12.jpg',
+            'mandala13.jpg',
+            'mandala14.jpg',
+            'mandala15.jpg',
           ],
         },
         {
@@ -71,7 +87,16 @@ export default {
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
           descript:
             'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
-          galery: [],
+          galery: [
+            'fest1.jpg',
+            'fest2.jpg',
+            'fest3.jpg',
+            'fest4.jpg',
+            'fest5.jpg',
+            'fest6.jpg',
+            'fest7.jpg',
+            'fest8.jpg',
+          ],
         },
       ],
     }

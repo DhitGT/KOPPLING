@@ -68,11 +68,11 @@
                 :key="`gallery-${i}`"
                 class="rounded-lg border border-gray-700 cursor-pointer"
                 v-for="(item, i) in item.galery"
-                @click="openImageDialog(item)"
+                @click="openImageDialog(imgUrls[item])"
               >
                 <v-img
                   class="rounded-lg object-cover aspect-square"
-                  :src="item"
+                  :src="imgUrls[item]"
                 ></v-img>
               </div>
             </div>
@@ -105,6 +105,9 @@
 </template>
 
 <script>
+import { storage } from '~/plugins/firebase'
+import { ref, getDownloadURL } from 'firebase/storage'
+
 export default {
   props: {
     item: {
@@ -115,6 +118,7 @@ export default {
       default: false,
     },
   },
+
   data: () => ({
     tampilkan: false,
     dialog: false,
@@ -128,11 +132,16 @@ export default {
       {
         url: 'https://placehold.co/300',
       },
-      // Other gallery items...
+      // Other galery items...
     ],
     imageDialog: false,
     selectedImage: '',
+    imageCache: {},
+    imgUrls: {},
   }),
+  async created() {
+    await this.preFetchImageUrls()
+  },
   methods: {
     openImageDialog(imageUrl) {
       this.selectedImage = imageUrl
@@ -144,6 +153,18 @@ export default {
     },
     konfirmasiBtn() {
       this.$emit('confirm')
+    },
+    async preFetchImageUrls() {
+      const promises = this.item.galery.map(async (imgName) => {
+        try {
+          const fileRef = ref(storage, imgName)
+          const url = await getDownloadURL(fileRef)
+          this.$set(this.imgUrls, imgName, url)
+        } catch (error) {
+          console.error('Error getting image URL:', error)
+        }
+      })
+      await Promise.all(promises)
     },
   },
   watch: {
