@@ -6,7 +6,7 @@
         <p class="mb-3 font-normal text-lgs text-gray-400">
           Koppling itu ngapain aja sih kak?. Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Nah Dibawah ini ada detail
-          kegiatan-kegiatan yang kita lakuin nih.
+          kegiatan-kegiatan yang kita lakuin nihhh.
         </p>
       </div>
     </v-container>
