@@ -39,14 +39,14 @@ export default {
           descript:
             'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
           galery: [
-            'outb1.jpg',
-            'outb2.jpg',
-            'outb3.jpg',
-            'outb4.jpg',
-            'outb5.jpg',
-            'outb6.jpg',
+            'outb1.JPG',
+            'outb2.JPG',
+            'outb3.j',
+            'outb4.JPG',
+            'outb5.JPG',
+            'outb6.JPG',
             'outb7.jpg',
-            'outb8.jpg',
+            'outb8.JPG',
           ],
         },
         {
