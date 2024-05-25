@@ -41,7 +41,7 @@ export default {
           galery: [
             'outb1.JPG',
             'outb2.JPG',
-            'outb3.j',
+            'outb3.jpg',
             'outb4.JPG',
             'outb5.JPG',
             'outb6.JPG',
@@ -78,7 +78,7 @@ export default {
           ],
         },
         {
-          title: 'Koppling Fest',
+          title: 'Pelatihan Vertical & Pengenalan Reptile',
           gen: 'IX',
           location: 'SMKN 2 Bekasi, Bekasi',
           date: '1 Juni 2024',
