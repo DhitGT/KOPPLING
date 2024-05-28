@@ -29,7 +29,7 @@ export default {
     return {
       itemActivities: [
         {
-          title: 'Koppling outbond',
+          title: 'Koppling Outbond',
           gen: 'IV',
           location: 'Setu, Bogor',
           date: '1 Juni 2023',
