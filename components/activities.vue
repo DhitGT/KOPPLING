@@ -5,7 +5,7 @@
         <span class="text-4xl font-bold mb-5">Aktivitas Kami</span>
         <p class="mb-3 font-normal text-lgs text-gray-400">
           Koppling itu ngapain aja sih kak?. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Nah Dibawah ini ada detail
+          consectetur adipisici elit. Nah Dibawah ini ada detail
           kegiatan-kegiatan yang kita lakuin nih.
         </p>
       </div>
