@@ -8,7 +8,7 @@
     <div
       @click="handleClick"
       href="#"
-      class="flex flex-col lg:flex-row items-center rounded-lg shadow w-[70vw] border md:w-max border-gray-700 bg-gray-800 hover:bg-gray-700 cursor-pointer"
+      class="flex flex-col min-h-[100%] lg:flex-row items-center rounded-lg shadow w-[70vw] border md:w-max border-gray-700 bg-gray-800 hover:bg-gray-700 cursor-pointer"
     >
       <div class="md:w-full pa-2 md:h-full overflow-hidden rounded-lg">
         <img
@@ -23,9 +23,7 @@
         >
           {{ item.title }}
         </h5>
-        <div
-          class="overflow-y-scroll md:overflow-auto max-h-[5vh] md:max-h-max"
-        >
+        <div class="overflow-y-hidden max-h-[5vh] md:max-h-max">
           <p class="mb-3 font-normal md:text-sm text-xs text-gray-400">
             {{
               item.descript.length > 50

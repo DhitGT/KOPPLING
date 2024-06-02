@@ -3,11 +3,20 @@
     <v-container>
       <div class="flex flex-col items-center justify-center">
         <span class="text-4xl font-bold mb-5">Aktivitas Kami</span>
-        <p class="mb-3 font-normal text-lgs text-gray-400">
-          Koppling itu ngapain aja sih kak?. Lorem ipsum dolor sit amet
-          consectetur adipisici. Nah Dibawah ini ada detail
-          kegiatan-kegiatan yang kita lakuin nih.
-        </p>
+        <div>
+          <p class="mb-3 font-normal text-lgs text-gray-400">
+            Koppling itu ngapain aja sih kak?. Lorem ipsum dolor sit amet
+            consectetur adipisici. Seperti : Dibawah ini ada detail
+            kegiatan-kegiatan yang kita lakuin nih.
+          </p>
+          <ul>
+            <li class="text-gray-400">1. Hiking & Camping</li>
+            <li class="text-gray-400">2. Mountaineering</li>
+            <li class="text-gray-400">3. Belajar Hidroponik</li>
+            <li class="text-gray-400">4. Belajar Lingkungan Hidup</li>
+            <li class="text-gray-400">5. Studi Visit Nah</li>
+          </ul>
+        </div>
       </div>
     </v-container>
     <v-container class="overflow-scroll md:overflow-auto">

@@ -26,7 +26,7 @@
           class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
         >
           <a
-            :href="whatsappLink"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdH5ainp7B7cj1kLM4UuAsTtGDs5U2RwPFDc1kRVJUoPLDn9g/viewform"
             target="_blank"
             style="color: white"
             class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800"
