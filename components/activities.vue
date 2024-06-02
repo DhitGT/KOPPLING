@@ -37,7 +37,7 @@ export default {
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
           descript:
-            'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
+            'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis.',
           galery: [
             'outb1.JPG',
             'outb2.JPG',
