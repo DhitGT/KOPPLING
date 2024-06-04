@@ -5,9 +5,9 @@
       <div class="flex flex-col items-center justify-center">
         <span class="text-4xl font-bold mb-5">Alumni Kami</span>
         <p class="mb-3 font-normal text-lg text-gray-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-          autem. Obcaecati delectus eum dolore illo ullam pariatur non minus
-          fuga quis commodi
+          Di bawah ini adalah gambar-gambar kaka-kaka alumni KOPPLING yang masih
+          aktif mengikuti berbagai acara dari KOPPLING, serta masih sering
+          membimbing anggota KOPPLING.
         </p>
       </div>
     </v-container>

@@ -17,3 +17,8 @@ nav {
 .bg-transparent {
   background-color: transparent;
 }
+
+.nav-link:visited {
+  color: white;
+  /* Ubah warna teks menjadi putih untuk link yang sudah dikunjungi */
+}

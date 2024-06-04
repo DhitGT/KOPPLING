@@ -4,18 +4,47 @@
       <div class="flex flex-col items-center justify-center">
         <span class="text-4xl font-bold mb-5">Aktivitas Kami</span>
         <div>
-          <p class="mb-3 font-normal text-lgs text-gray-400">
-            Koppling itu ngapain aja sih kak?. Lorem ipsum dolor sit amet
-            consectetur adipisici. Seperti : Dibawah ini ada detail
-            kegiatan-kegiatan yang kita lakuin nih.
+          <p class="mb-3 font-normal text-lgs  text-gray-400">
+            Koppling itu ngapain aja sih kak? Dalam menjalankan misinya, kami
+            aktif dalam berbagai kegiatan yang berkontribusi pada pelestarian
+            lingkungan dan pengembangan diri. Kami berusaha menyelenggarakan
+            kegiatan yang bervariasi dan mendidik untuk menginspirasi anggota
+            kami. Berikut adalah beberapa contohnya:
           </p>
-          <ul>
-            <li class="text-gray-400">1. Hiking & Camping</li>
-            <li class="text-gray-400">2. Mountaineering</li>
-            <li class="text-gray-400">3. Belajar Hidroponik</li>
-            <li class="text-gray-400">4. Belajar Lingkungan Hidup</li>
-            <li class="text-gray-400">5. Studi Visit Nah</li>
+
+          <ul class="text-gray-400">
+            <li class="list-disc mb-2">
+              <span class="font-bold"> Hiking & Camping: </span>
+              Menjelajahi alam sambil belajar tentang keanekaragaman hayati dan
+              pentingnya melestarikan lingkungan alam.
+            </li>
+            <li class="list-disc mb-2">
+              <span class="font-bold"> Mountaineering: </span>
+              Mendaki gunung untuk merasakan keindahan alam dan meningkatkan
+              keterampilan bertahan hidup di lingkungan yang keras.
+            </li>
+            <li class="list-disc mb-2">
+              <span class="font-bold"> Pembelajaran Hidroponik: </span>
+              Mengenal teknik bertani modern yang ramah lingkungan dan
+              berkontribusi pada ketahanan pangan.
+            </li>
+            <li class="list-disc mb-2">
+              <span class="font-bold">
+                Pembelajaran tentang Lingkungan Hidup:
+              </span>
+              Memahami isu-isu lingkungan dan mencari solusi inovatif untuk
+              mengatasi tantangan yang dihadapi.
+            </li>
+            <li class="list-disc mb-2">
+              <span class="font-bold"> Kunjungan Studi: </span>
+              Mengunjungi tempat-tempat yang memiliki praktik terbaik dalam
+              pengelolaan lingkungan dan belajar dari pengalaman mereka.
+            </li>
           </ul>
+
+          <p class="mb-3 font-normal text-lgs text-gray-400">
+            Dibawah ini ada detail kegiatan yang pernah kita lakuin nihh
+          </p>
         </div>
       </div>
     </v-container>

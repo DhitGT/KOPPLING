@@ -19,8 +19,7 @@
         <p
           class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
         >
-          Kami adalah eksrakurikuler yang Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit, doloribus?
+          We Safe, We Care
         </p>
         <div
           class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
