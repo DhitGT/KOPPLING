@@ -49,7 +49,6 @@
               <a
                 href="#about-us"
                 class="block nav-link py-2 px-3 rounded md:bg-transparent md:p-0 text-white md:text-blue-500"
-                aria-current="page"
                 >About</a
               >
             </li>
