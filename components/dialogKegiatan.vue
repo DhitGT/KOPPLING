@@ -73,7 +73,15 @@
                 <v-img
                   class="rounded-lg object-cover aspect-square"
                   :src="imgUrls[item]"
-                ></v-img>
+                >
+                  <template #placeholder>
+                    <v-skeleton-loader
+                      type="image"
+                      width="100%"
+                      height="100%"
+                    ></v-skeleton-loader>
+                  </template>
+                </v-img>
               </div>
             </div>
           </div>
