@@ -4,7 +4,7 @@
       <div class="flex flex-col items-center justify-center">
         <span class="text-4xl font-bold mb-5">Aktivitas Kami</span>
         <div>
-          <p class="mb-3 font-normal text-lgs  text-gray-400">
+          <p class="mb-3 font-normal text-lgs text-gray-400">
             Koppling itu ngapain aja sih kak? Dalam menjalankan misinya, kami
             aktif dalam berbagai kegiatan yang berkontribusi pada pelestarian
             lingkungan dan pengembangan diri. Kami berusaha menyelenggarakan
@@ -69,13 +69,13 @@ export default {
         {
           title: 'Koppling Outbond',
           gen: 'IV',
-          location: 'Setu, Bogor',
-          date: '1 Juni 2023',
+          location: 'Sumur Batu',
+          date: '5 Mei 2024',
           imgUrl: 'bgJumbo.jpg',
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
           descript:
-            'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis.',
+            'Kegiatan Out Bond Anggota Koppling bersama kaka-kaka alumni ',
           galery: [
             'outb1.JPG',
             'outb2.JPG',
@@ -91,12 +91,12 @@ export default {
           title: 'Mandalawangi Camping',
           gen: 'VII',
           location: 'Mandalawangi, Bogor',
-          date: '1 Maret 2023',
+          date: '30 September 2023',
           imgUrl: 'bgJumbo2.jpg',
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
           descript:
-            'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
+            'Kegiatan Camping di Mandalawangi, selama 1 hari 1 malam',
           galery: [
             'mandala1.jpg',
             'mandala2.jpg',
@@ -119,12 +119,12 @@ export default {
           title: 'Pelatihan Vertical & Pengenalan Reptile',
           gen: 'IX',
           location: 'SMKN 2 Bekasi, Bekasi',
-          date: '1 Juni 2024',
+          date: '12 Agustus 2023',
           imgUrl: 'bgJumbo3.jpg',
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
           descript:
-            'lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, eum.',
+            'Pelatihan Vertical dan pengenalan reptile dari team panakawanrescue',
           galery: [
             'fest1.jpg',
             'fest2.jpg',
