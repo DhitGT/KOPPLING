@@ -157,9 +157,9 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
-    this.handleScroll() // Initialize state based on current scroll positionkkjhhk
+    this.handleScroll() // Initialize state based on current scroll position
 
-    // Add event listeners to nav links
+    // Add event listeners to nav linksasdasd
     document.querySelectorAll('.nav-link').forEach((link) => {
       link.addEventListener('click', this.scrollToSection)
     })
