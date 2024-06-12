@@ -133,7 +133,7 @@ export default {
     return {
       isTop: true,
       isSidebarOpen: false,
-      offset: 100, // Set your desired offset height here (e.g., height of the navbar)
+      offset: 100, // Set your asdasd desired offset height here (e.g., height of the navbar)
     }
   },
   methods: {
