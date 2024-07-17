@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      :class="{ 'bg-transparent': isTop, 'bg-gray-900': !isTop }"
+      :class="{ 'bg-transparent': isTop, 'bg-[#508D4E]': !isTop }"
       class="fixed w-full top-0 transition-colors duration-500 ease-in-out"
       style="z-index: 999"
     >
@@ -12,13 +12,13 @@
           <img
             src="kopplingLogo.png"
             class="h-8 rounded-full"
-            alt="Flowbite Logo"
-          />
+            alt="Flowbite Logo" />
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap text-white"
             >Koppling</span
           >
-        </a>
+          <span class="text-white"> </span
+        ></a>
         <button
           @click="toggleSidebar"
           type="button"
@@ -31,6 +31,7 @@
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 17 14"
+            color="white"
           >
             <path
               stroke="currentColor"
@@ -48,22 +49,22 @@
             <li>
               <a
                 href="#about-us"
-                class="block nav-link py-2 px-3 rounded md:bg-transparent md:p-0 text-white md:text-blue-500"
-                >About</a
+                class="block nav-link py-2 px-3 rounded md:bg-transparent md:p-0 visited:text-white text-white md:text-blue-500"
+                ><span class="text-white">About</span></a
               >
             </li>
             <li>
               <a
                 href="#activities"
                 class="block nav-link py-2 px-3 rounded md:border-0 md:p-0 text-white hover:text-blue-500 hover:bg-gray-700 md:hover:bg-transparent"
-                >Activities</a
+                ><span class="text-white">Activities</span></a
               >
             </li>
             <li>
               <a
                 href="#alumni"
                 class="block nav-link py-2 px-3 rounded md:border-0 md:p-0 text-white hover:text-blue-500 hover:bg-gray-700 md:hover:bg-transparent"
-                >Alumni</a
+                ><span class="text-white">Alumni</span></a
               >
             </li>
           </ul>
@@ -77,10 +78,10 @@
       v-if="isSidebarOpen"
       class="fixed inset-0 bg-gray-900 bg-opacity-75 z-50 md:hidden transition-opacity duration-1000 ease-in-out"
       :class="isSidebarOpen ? 'opacity-100' : 'opacity-0'"
-      style="z-index: 99"
+      style="z-index: 1111"
     >
       <div
-        class="absolute top-0 right-0 w-64 h-full bg-gray-800 shadow-md p-4 transform transition-transform duration-1000 ease-in-out"
+        class="absolute top-0 right-0 w-64 h-full bg-[#508D4E] shadow-md p-4 transform transition-transform duration-1000 ease-in-out"
         :class="isSidebarOpen ? 'translate-x-0' : 'translate-x-full'"
       >
         <button @click="toggleSidebar" class="mb-4 text-right">
@@ -103,23 +104,23 @@
           <li>
             <a
               href="#about-us"
-              class="block nav-link py-2 px-3 rounded text-gray-800 hover:text-blue-500 hover:bg-gray-200"
+              class="block nav-link py-2 px-3 rounded text-gray-800 hover:text-blue-500 hover:bg-[#1A5319]"
               aria-current="page"
-              >About</a
+              ><span class="text-white">About</span></a
             >
           </li>
           <li>
             <a
               href="#activities"
-              class="block nav-link py-2 px-3 rounded text-gray-800 hover:text-blue-500 hover:bg-gray-200"
-              >Activities</a
+              class="block nav-link py-2 px-3 rounded text-gray-800 hover:text-blue-500 hover:bg-[#1A5319]"
+              ><span class="text-white">Activities</span></a
             >
           </li>
           <li>
             <a
               href="#alumni"
-              class="block nav-link py-2 px-3 rounded text-gray-800 hover:text-blue-500 hover:bg-gray-200"
-              >Alumni</a
+              class="block nav-link py-2 px-3 rounded text-gray-800 hover:text-blue-500 hover:bg-[#1A5319]"
+              ><span class="text-white">Alumni</span></a
             >
           </li>
         </ul>

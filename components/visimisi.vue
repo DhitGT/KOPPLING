@@ -4,16 +4,16 @@
       class="wrapper w-max-[90vw] mx-auto grid gap-4 mt-6 grid-cols-1 md:grid-cols-2"
     >
       <div
-        class="max-w-full p-6 rounded-lg shadow bg-gray-900 border-2 border-gray-700 transition-all duration-1000 sections"
+        class="max-w-full p-6 rounded-lg shadow bg-[#80AF81] border-2 border-[#508D4E] transition-all duration-1000 sections"
       >
         <a href="#">
           <h5
-            class="mb-2 text-xl md:text-2xl font-semibold tracking-tight text-white"
+            class="mb-2 text-xl md:text-2xl font-semibold tracking-tight text-[#F1FDF3]"
           >
             Visi
           </h5>
         </a>
-        <p class="mb-3 font-normal text-gray-400">
+        <p class="mb-3 font-normal text-[#F1FDF3]">
           Menjadi komunitas pelajar yang inovatif dan inspiratif dalam
           meningkatkan kesadaran serta mengambil tindakan nyata untuk
           melestarikan lingkungan, menciptakan generasi yang peduli, bertanggung
@@ -21,16 +21,16 @@
         </p>
       </div>
       <div
-        class="max-w-full p-6 rounded-lg shadow bg-gray-900 border-2 border-gray-700 transition-all duration-1000 sections"
+        class="max-w-full p-6 rounded-lg shadow bg-[#80AF81] border-2 border-[#508D4E] transition-all duration-1000 sections"
       >
         <a href="#">
           <h5
-            class="mb-2 text-xl md:text-2xl font-semibold tracking-tight text-white"
+            class="mb-2 text-xl md:text-2xl font-semibold tracking-tight text-[#F1FDF3]"
           >
             Misi
           </h5>
         </a>
-        <div class="mb-3 font-normal text-gray-400">
+        <div class="mb-3 font-normal text-[#F1FDF3]">
           <ol>
             <li class="list-disc mb-2">
               Menyelenggarakan program pendidikan yang kreatif dan informatif

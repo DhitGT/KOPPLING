@@ -3,11 +3,16 @@
     <section
       class="relative min-h-[100vh] pt-24 md:pt-0 transition-opacity duration-500 ease-in-out"
     >
+      <!-- Black background div -->
+      <div class="absolute inset-0 bg-black"></div>
+
+      <!-- Main background image div with fading animation -->
       <div
         :style="{ backgroundImage: `url(${currentBackground})` }"
         class="absolute inset-0 bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply transition-opacity duration-1000 ease-in-out"
         :class="{ 'opacity-0': fadingOut, 'opacity-100': !fadingOut }"
       ></div>
+
       <div
         class="relative z-10 px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56"
       >
@@ -28,7 +33,7 @@
             href="https://docs.google.com/forms/d/e/1FAIpQLSdH5ainp7B7cj1kLM4UuAsTtGDs5U2RwPFDc1kRVJUoPLDn9g/viewform"
             target="_blank"
             style="color: white"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#80AF81] hover:bg-[#508D4E]"
           >
             <span class="text-white"> Join Koppling </span>
             <svg
@@ -49,9 +54,9 @@
           </a>
           <a
             href="#about-us"
-            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+            class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-[#80AF81] visited:text-[#80AF81] rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
           >
-            Pelajari Lebih Lanjut
+            <span class="text-[#80AF81]"> Pelajari Lebih Lanjut </span>
           </a>
         </div>
       </div>
@@ -68,6 +73,9 @@ export default {
         'bgJumbo3.jpg',
         'bgJumbo4.jpg',
         'bgJumbo5.jpg',
+        'choirulrizal.jpg',
+        'mandala3.jpg',
+
         // Add more image URLs here
       ],
       currentBackgroundIndex: 0,

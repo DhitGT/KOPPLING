@@ -1,16 +1,14 @@
 <template>
-  <div class="my-12 pa-6">
+  <div class="my-12 py-6">
     <v-container>
       <div>
-        <div class="font-bold text-xl my-6 md:text-3xl text-center lg:text-4xl">
-          Gallery
-        </div>
+        <div class="text-4xl font-bold text-center mb-12 mx-auto">Gallery</div>
         <div
-          class="gallery grid grid-cols-2 gap-3 md:gap-4 justify-evenly md:grid-cols-5"
+          class="gallery grid grid-cols-2 gap-3 md:gap-4 justify-between md:grid-cols-5"
         >
           <div
             :key="`dialog-gallery-${i}`"
-            class="rounded-lg border border-gray-700 cursor-pointer"
+            class="rounded-lg border border-[#D6EFD8] cursor-pointer"
             v-for="(item, i) in displayedImages"
             @click="openImageDialog(imgUrls[item])"
           >
@@ -31,7 +29,7 @@
         <v-btn
           v-if="displayedImages.length < itemGallery.length"
           class="mt-4"
-          color="primary"
+          color="#80AF81"
           @click="loadMoreImages"
         >
           Load More

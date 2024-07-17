@@ -4,7 +4,7 @@
       <div class="flex flex-col items-center justify-center">
         <span class="text-4xl font-bold mb-5">Aktivitas Kami</span>
         <div>
-          <p class="mb-3 font-normal text-lgs text-gray-400">
+          <p class="mb-3 font-normal text-lgs text-gray-600">
             Koppling itu ngapain aja sih kak? Dalam menjalankan misinya, kami
             aktif dalam berbagai kegiatan yang berkontribusi pada pelestarian
             lingkungan dan pengembangan diri. Kami berusaha menyelenggarakan
@@ -12,12 +12,7 @@
             kami. Berikut adalah beberapa contohnya:
           </p>
 
-          <ul class="text-gray-400">
-            <li class="list-disc mb-2">
-              <span class="font-bold"> Hiking & Camping: </span>
-              Menjelajahi alam sambil belajar tentang keanekaragaman hayati dan
-              pentingnya melestarikan lingkungan alam.
-            </li>
+          <ul class="text-gray-600">
             <li class="list-disc mb-2">
               <span class="font-bold"> Mountaineering: </span>
               Mendaki gunung untuk merasakan keindahan alam dan meningkatkan
@@ -42,7 +37,7 @@
             </li>
           </ul>
 
-          <p class="mb-3 font-normal text-lgs text-gray-400">
+          <p class="mb-3 font-normal text-lgs text-gray-600">
             Dibawah ini ada detail kegiatan yang pernah kita lakuin nihh
           </p>
         </div>

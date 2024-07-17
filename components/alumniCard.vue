@@ -1,7 +1,7 @@
 <template>
   <div class="min-w-fit">
     <div
-      class="min-w-fit md:max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700"
+      class="min-w-fit md:max-w-sm border rounded-lg shadow bg-[#80AF81] border-[#D1E9D2]"
     >
       <div class="p-5 pb-0">
         <div class="flex items-center">
@@ -9,10 +9,12 @@
             <img class="w-10 h-10 rounded-full" :src="item.profilePic" />
           </div>
           <div class="flex flex-col justify-center items-start min-w-0 ms-4">
-            <span class="text-sm font-medium truncate text-white">
+            <span class="text-lg font-medium truncate text-[#F1FDF3]">
               {{ item.name }}
             </span>
-            <span class="text-sm truncate text-gray-400"> {{ item.gen }} </span>
+            <span class="text-sm truncate text-[#F1FDF3]">
+              {{ item.gen }}
+            </span>
           </div>
         </div>
       </div>
@@ -24,7 +26,7 @@
         <v-icon class="fixed top-10 left-4" color="white">mdi-instagram</v-icon>
 
         <img
-          class="rounded-lg w-full aspect-square object-cover"
+          class="rounded-b-lg w-full aspect-square object-cover"
           :src="item.imgUrl"
           alt=""
         />

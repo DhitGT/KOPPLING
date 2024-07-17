@@ -7,8 +7,8 @@
       transition="dialog-bottom-transition"
       class="pt-28 green"
     >
-      <v-card color="#1f2937">
-        <v-toolbar dark color="#111827">
+      <v-card color="#F1FDF3">
+        <v-toolbar dark color="#508D4E">
           <v-btn icon dark @click="tampilkan = false">
             <v-icon>mdi-close</v-icon>
           </v-btn>
@@ -47,13 +47,13 @@
             </section>
             <div class="detail">
               <div>
-                <span class="text-gray-300">{{ item.descript }}</span>
+                <span class="text-gray-600">{{ item.descript }}</span>
               </div>
-              <div class="flex gap-2 text-gray-300 mt-2">
+              <div class="flex gap-2 text-gray-600 mt-2">
                 <v-icon small>mdi-map-marker</v-icon>
                 <span>{{ item.location }}</span>
               </div>
-              <div class="flex gap-2 text-gray-300">
+              <div class="flex gap-2 text-gray-600">
                 <v-icon small>mdi-calendar-outline</v-icon>
                 <span>{{ item.date }}</span>
               </div>
@@ -66,7 +66,7 @@
             <div class="gallery grid grid-cols-3 gap-2 md:grid-cols-4">
               <div
                 :key="`dialog-gallery-${i}`"
-                class="rounded-lg border border-gray-700 cursor-pointer"
+                class="rounded-lg border border-[#508D4E] cursor-pointer"
                 v-for="(item, i) in item.galery"
                 @click="openImageDialog(imgUrls[item])"
               >
@@ -92,7 +92,7 @@
     <!-- Dialog for fullscreen image -->
     <v-dialog v-model="imageDialog" fullscreen hide-overlay>
       <v-card>
-        <v-toolbar dark color="#1f2937">
+        <v-toolbar dark color="#508D4E">
           <v-btn icon dark @click="closeImageDialog">
             <v-icon>mdi-close</v-icon>
           </v-btn>

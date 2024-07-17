@@ -1,5 +1,5 @@
 <template>
-  <footer class="rounded-lg shadow bg-gray-900">
+  <footer class="rounded-lg shadow bg-[#508D4E]">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a
@@ -21,20 +21,22 @@
         >
           <li>
             <a href="#about-us" class="foo-link hover:underline me-4 md:me-6"
-              >About</a
+              ><span class="text-white">About</span></a
             >
           </li>
 
           <li>
-            <a href="#" class="foo-link hover:underline">Contact</a>
+            <a href="#" class="foo-link hover:underline"
+              ><span class="text-white">Contact</span></a
+            >
           </li>
         </ul>
       </div>
-      <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
-      <span class="block text-sm sm:text-center text-gray-400"
+      <hr class="my-6 sm:mx-auto border-gray-200 lg:my-8" />
+      <span class="block text-sm sm:text-center text-gray-200"
         >© 2024
         <a href="https://koppling.site/" class="hover:underline"
-          >koppling.site</a
+          ><span class="text-white">koppling.site</span></a
         >. All Rights Reserved.</span
       >
     </div>

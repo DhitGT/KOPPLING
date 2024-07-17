@@ -3,7 +3,7 @@
     <v-container>
       <div class="flex flex-col items-center justify-center">
         <span class="text-4xl font-bold mb-5">Tentang Kami</span>
-        <p class="mb-3 font-normal text-lg text-gray-400">
+        <p class="mb-3 font-normal text-lg text-gray-600">
           KOPPLING adalah singkatan dari Komunitas Pelajar Pecinta Lingkungan,
           sebuah organisasi ekstrakurikuler yang dibentuk oleh dan untuk pelajar
           yang memiliki kepedulian tinggi terhadap isu-isu lingkungan. Kami
