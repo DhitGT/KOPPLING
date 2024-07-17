@@ -6,6 +6,6 @@
     <activities id="activities" />
     <alumni id="alumni" />
     <galery id="gallery" />
-    <cusfooter></cusfooter>
+    <cusfooter id="cusFooter"></cusfooter>
   </div>
 </template>

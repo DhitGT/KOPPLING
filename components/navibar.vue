@@ -57,6 +57,20 @@
                 ><span class="text-white">Alumni</span></a
               >
             </li>
+            <li>
+              <a
+                href="#gallery"
+                class="block nav-link py-2 px-3 rounded md:border-0 md:p-0 text-white hover:text-blue-500 hover:bg-gray-700 md:hover:bg-transparent"
+                ><span class="text-white">Gallery</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="#cusFooter"
+                class="block nav-link py-2 px-3 rounded md:border-0 md:p-0 text-white hover:text-blue-500 hover:bg-gray-700 md:hover:bg-transparent"
+                ><span class="text-white">Contact</span></a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -105,6 +119,22 @@
                 class="block nav-link py-2 px-3 rounded"
                 @click="isSidebarOpen = false"
                 ><span class="text-white">Alumni</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="#gallery"
+                class="block nav-link py-2 px-3 rounded"
+                @click="isSidebarOpen = false"
+                ><span class="text-white">Gallery</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="#cusFooter"
+                class="block nav-link py-2 px-3 rounded"
+                @click="isSidebarOpen = false"
+                ><span class="text-white">Contact</span></a
               >
             </li>
           </ul>

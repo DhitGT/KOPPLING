@@ -96,6 +96,24 @@ export default {
         'outb6.jpg',
         'outb7.jpg',
         'outb8.jpg',
+        'kinifarm1.jpg',
+        'kinifarm2.jpg',
+        'kinifarm3.jpg',
+        'kinifarm4.jpg',
+        'kinifarm5.jpg',
+        'kinifarm6.jpg',
+        'kinifarm7.jpg',
+        'kinifarm8.jpg',
+        'plogging1.jpg',
+        'plogging2.jpg',
+        'plogging3.jpg',
+        'plogging4.jpg',
+        'plogging5.jpg',
+        'plogging6.jpg',
+        'plogging7.jpg',
+        'plogging8.jpg',
+        'plogging9.jpg',
+        'plogging10.jpg',
       ],
       imageDialog: false,
       selectedImage: '',
@@ -106,6 +124,7 @@ export default {
   },
   async created() {
     await this.preFetchImageUrls()
+    this.shuffleArray(this.itemGallery)
     this.displayedImages = this.itemGallery.slice(0, 10)
   },
   methods: {
@@ -133,6 +152,14 @@ export default {
       const startIndex = this.displayedImages.length
       const endIndex = startIndex + 10
       this.displayedImages = this.itemGallery.slice(0, endIndex)
+    },
+    shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1))
+        const temp = array[i]
+        array[i] = array[j]
+        array[j] = temp
+      }
     },
   },
 }

@@ -8,7 +8,7 @@
     <div
       @click="handleClick"
       href="#"
-      class="flex flex-col min-h-[100%] lg:flex-row items-center rounded-lg shadow w-[70vw] border md:w-max border-[#508D4E] bg-[#80AF81] hover:bg-[#508D4E] cursor-pointer"
+      class="flex flex-col min-h-[100%] items-center rounded-lg shadow w-[70vw] border md:w-max border-[#508D4E] bg-[#80AF81] hover:bg-[#508D4E] cursor-pointer"
     >
       <div class="md:w-full pa-2 md:h-full overflow-hidden rounded-lg">
         <img

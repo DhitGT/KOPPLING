@@ -4,12 +4,11 @@
       <div class="flex flex-col items-center justify-center">
         <span class="text-4xl font-bold mb-5">Aktivitas Kami</span>
         <div>
-          <p class="mb-3 font-normal text-lgs text-gray-600">
-            Koppling itu ngapain aja sih kak? Dalam menjalankan misinya, kami
-            aktif dalam berbagai kegiatan yang berkontribusi pada pelestarian
-            lingkungan dan pengembangan diri. Kami berusaha menyelenggarakan
-            kegiatan yang bervariasi dan mendidik untuk menginspirasi anggota
-            kami. Berikut adalah beberapa contohnya:
+          <p class="mb-3 font-normal text-lg text-gray-600">
+            Adapun kegiatan yang kami lakukan adalah kegiatan yang berkontribusi
+            pada pelestarian lingkungan dan pengembangan diri. Kami berusaha
+            menyelenggarakan kegiatan yang bervariasi dan mendidik untuk
+            menginspirasi anggota kami. Berikut adalah beberapa contohnya:
           </p>
 
           <ul class="text-gray-600">
@@ -37,15 +36,16 @@
             </li>
           </ul>
 
-          <p class="mb-3 font-normal text-lgs text-gray-600">
-            Dibawah ini ada detail kegiatan yang pernah kita lakuin nihh
+          <p class="mb-3 font-normal text-lg text-gray-600">
+            Nah dibawah ini ada detail beberapa kegiatan yang pernah kita
+            lakuin.
           </p>
         </div>
       </div>
     </v-container>
     <v-container class="overflow-scroll md:overflow-auto">
       <div
-        class="wrapper flex w-max md:grid gap-6 justify-items-stretch md:grid-cols-2 rounded-lg p-2 content-left self-center"
+        class="wrapper flex w-max md:grid gap-6 justify-items-stretch md:grid-cols-3 lg:grid-cols-4 rounded-lg p-2 content-left self-center"
       >
         <card-image
           v-for="(item, i) in itemActivities"
@@ -128,6 +128,49 @@ export default {
             'fest6.jpg',
             'fest7.jpg',
             'fest8.jpg',
+          ],
+        },
+        {
+          title: 'Kunjungan Ke Kini Farm Hidroponik',
+          gen: 'IX-X',
+          location: 'Bantargebang',
+          date: '31 Agustus 2023',
+          imgUrl: 'kinifarm6.jpg',
+          action:
+            'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+          descript: 'Kunjungan dan pembelajaran seputar hidroponik di Kinifarm',
+          galery: [
+            'kinifarm1.jpg',
+            'kinifarm2.jpg',
+            'kinifarm3.jpg',
+            'kinifarm4.jpg',
+            'kinifarm5.jpg',
+            'kinifarm6.jpg',
+            'kinifarm7.jpg',
+            'kinifarm8.jpg',
+            'kinifarm9.jpg',
+          ],
+        },
+        {
+          title: 'Plogging World Clean Up Day',
+          gen: 'X',
+          location: 'Bundaran HI, Jakarta Pusat',
+          date: '28 Mei 2023',
+          imgUrl: 'plogging1.jpg',
+          action:
+            'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+          descript: 'Plogging CFD Hari Tanpa Tembakau Sedunia',
+          galery: [
+            'plogging1.jpg',
+            'plogging2.jpg',
+            'plogging3.jpg',
+            'plogging4.jpg',
+            'plogging5.jpg',
+            'plogging6.jpg',
+            'plogging7.jpg',
+            'plogging8.jpg',
+            'plogging9.jpg',
+            'plogging10.jpg',
           ],
         },
       ],
