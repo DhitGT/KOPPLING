@@ -77,14 +77,14 @@ export default {
           descript:
             'Kegiatan Out Bond Anggota Koppling bersama kaka-kaka alumni ',
           galery: [
-            'outb1.JPG',
-            'outb2.JPG',
+            'outb1.jpg',
+            'outb2.jpg',
             'outb3.jpg',
-            'outb4.JPG',
-            'outb5.JPG',
-            'outb6.JPG',
+            'outb4.jpg',
+            'outb5.jpg',
+            'outb6.jpg',
             'outb7.jpg',
-            'outb8.JPG',
+            'outb8.jpg',
           ],
         },
         {
@@ -95,8 +95,7 @@ export default {
           imgUrl: 'bgJumbo2.jpg',
           action:
             'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-          descript:
-            'Kegiatan Camping di Mandalawangi, selama 1 hari 1 malam',
+          descript: 'Kegiatan Camping di Mandalawangi, selama 1 hari 1 malam',
           galery: [
             'mandala1.jpg',
             'mandala2.jpg',

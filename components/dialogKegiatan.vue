@@ -65,7 +65,7 @@
             </div>
             <div class="gallery grid grid-cols-3 gap-2 md:grid-cols-4">
               <div
-                :key="`gallery-${i}`"
+                :key="`dialog-gallery-${i}`"
                 class="rounded-lg border border-gray-700 cursor-pointer"
                 v-for="(item, i) in item.galery"
                 @click="openImageDialog(imgUrls[item])"

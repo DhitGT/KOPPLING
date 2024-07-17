@@ -77,7 +77,7 @@
       v-if="isSidebarOpen"
       class="fixed inset-0 bg-gray-900 bg-opacity-75 z-50 md:hidden transition-opacity duration-1000 ease-in-out"
       :class="isSidebarOpen ? 'opacity-100' : 'opacity-0'"
-      style="z-index: 999999"
+      style="z-index: 99"
     >
       <div
         class="absolute top-0 right-0 w-64 h-full bg-gray-800 shadow-md p-4 transform transition-transform duration-1000 ease-in-out"
