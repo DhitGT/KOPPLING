@@ -26,14 +26,16 @@
             </v-img>
           </div>
         </div>
-        <v-btn
-          v-if="displayedImages.length < itemGallery.length"
-          class="mt-4"
-          color="#80AF81"
-          @click="loadMoreImages"
-        >
-          Load More
-        </v-btn>
+        <div class="w-full flex items-center">
+          <v-btn
+            v-if="displayedImages.length < itemGallery.length"
+            class="mt-4 mx-auto px-9"
+            color="#80AF81"
+            @click="loadMoreImages"
+          >
+            <span class="text-[#F1FDF3]"> Load More </span>
+          </v-btn>
+        </div>
       </div>
       <!-- Dialog for fullscreen image -->
       <v-dialog

@@ -1,46 +1,36 @@
 <template>
   <div>
+    <!-- Navbar -->
     <nav
-      :class="{ 'bg-transparent': isTop, 'bg-[#508D4E]': !isTop }"
+      :class="{
+        'bg-transparent': isTop && !isSidebarOpen,
+        'bg-[#508D4E]': !isTop || isSidebarOpen,
+      }"
       class="fixed w-full top-0 transition-colors duration-500 ease-in-out"
       style="z-index: 999"
     >
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        class="max-w-screen-xl flex items-center justify-between mx-auto p-4"
       >
         <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src="kopplingLogo.png"
             class="h-8 rounded-full"
-            alt="Flowbite Logo" />
+            alt="Flowbite Logo"
+          />
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap text-white"
             >Koppling</span
           >
-          <span class="text-white"> </span
-        ></a>
+        </a>
         <button
           @click="toggleSidebar"
           type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden text-gray-400"
         >
           <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
-            color="white"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+          <v-icon large color="white" v-if="!isSidebarOpen">mdi-menu</v-icon>
+          <v-icon large color="white" v-else>mdi-close</v-icon>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
@@ -73,68 +63,64 @@
     </nav>
 
     <!-- Mobile Sidebar -->
-    <!-- Sidebar with transition classes -->
-    <div
-      v-if="isSidebarOpen"
-      class="fixed inset-0 bg-gray-900 bg-opacity-75 z-50 md:hidden transition-opacity duration-1000 ease-in-out"
-      :class="isSidebarOpen ? 'opacity-100' : 'opacity-0'"
-      style="z-index: 1111"
-    >
+    <transition name="sidebar">
       <div
-        class="absolute top-0 right-0 w-64 h-full bg-[#508D4E] shadow-md p-4 transform transition-transform duration-1000 ease-in-out"
-        :class="isSidebarOpen ? 'translate-x-0' : 'translate-x-full'"
+        v-if="isSidebarOpen"
+        class="fixed inset-0 bg-transparent bg-opacity-75 z-50 md:hidden"
+        style="z-index: 888"
+        :class="{
+          'opacity-100': isSidebarOpen,
+          'opacity-0': !isSidebarOpen,
+        }"
       >
-        <button @click="toggleSidebar" class="mb-4 text-right">
-          <svg
-            class="w-6 h-6 text-gray-700"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="white"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-        <ul class="font-medium flex flex-col space-y-4">
-          <li>
-            <a
-              href="#about-us"
-              class="block nav-link py-2 px-3 rounded text-gray-800 hover:text-blue-500 hover:bg-[#1A5319]"
-              aria-current="page"
-              ><span class="text-white">About</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="#activities"
-              class="block nav-link py-2 px-3 rounded text-gray-800 hover:text-blue-500 hover:bg-[#1A5319]"
-              ><span class="text-white">Activities</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="#alumni"
-              class="block nav-link py-2 px-3 rounded text-gray-800 hover:text-blue-500 hover:bg-[#1A5319]"
-              ><span class="text-white">Alumni</span></a
-            >
-          </li>
-        </ul>
+        <div
+          class="absolute top-0 right-0 w-full h-full bg-[#1a531977] pt-24 backdrop-blur-xl backdrop:blur-xl shadow-md p-4 transform"
+          :class="{
+            'translate-x-0': isSidebarOpen,
+            'translate-x-full': !isSidebarOpen,
+          }"
+          @click.stop=""
+        >
+          <ul class="font-medium flex flex-col space-y-4">
+            <li>
+              <a
+                href="#about-us"
+                class="block nav-link py-2 px-3 rounded"
+                @click="isSidebarOpen = false"
+                aria-current="page"
+                ><span class="text-white">About</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="#activities"
+                class="block nav-link py-2 px-3 rounded"
+                @click="isSidebarOpen = false"
+                ><span class="text-white">Activities</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="#alumni"
+                class="block nav-link py-2 px-3 rounded"
+                @click="isSidebarOpen = false"
+                ><span class="text-white">Alumni</span></a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
+
 <script>
 export default {
   data() {
     return {
       isTop: true,
       isSidebarOpen: false,
-      offset: 100, // Set your asdasd desired offset height here (e.g., height of the navbar)
+      offset: 100, // Set your desired offset height here (e.g., height of the navbar)
     }
   },
   methods: {
@@ -158,9 +144,9 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
-    this.handleScroll() // Initialize a state based on current scroll positions.....
+    this.handleScroll()
 
-    // Add event listeners to nav linksasdasdnnknkj fwefwfw n
+    // Add event listeners to nav links
     document.querySelectorAll('.nav-link').forEach((link) => {
       link.addEventListener('click', this.scrollToSection)
     })
@@ -175,3 +161,14 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.sidebar-enter-active,
+.sidebar-leave-active {
+  transition: transform 0.5s ease;
+}
+.sidebar-enter,
+.sidebar-leave-to {
+  transform: translateX(200%);
+}
+</style>

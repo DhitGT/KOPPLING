@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div
       class="wrapper w-max-[90vw] mx-auto grid gap-4 mt-6 grid-cols-1 md:grid-cols-2"
     >
