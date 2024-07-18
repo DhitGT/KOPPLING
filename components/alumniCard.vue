@@ -6,7 +6,10 @@
       <div class="p-5 pb-0">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="w-10 h-10 rounded-full" :src="item.profilePic" />
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              :src="item.profilePic"
+            />
           </div>
           <div class="flex flex-col justify-center items-start min-w-0 ms-4">
             <span class="text-lg font-medium truncate text-[#F1FDF3]">

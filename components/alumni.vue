@@ -28,15 +28,15 @@
 export default {
   data() {
     return {
+      // {
+      //   name: '@choirul_rizall',
+      //   gen: 'Gen -',
+      //   imgUrl: 'choirulrizal.jpg',
+      //   action:
+      //     'https://www.instagram.com/p/Ci8GVCKvUjK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+      //   profilePic: 'karizalpfp.jpg',
+      // },
       itemAlumni: [
-        {
-          name: '@choirul_rizall',
-          gen: 'Gen VII',
-          imgUrl: 'choirulrizal.jpg',
-          action:
-            'https://www.instagram.com/p/Ci8GVCKvUjK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-          profilePic: 'karizalpfp.jpg',
-        },
         {
           name: '@ri_iki',
           gen: 'Gen II',
@@ -44,6 +44,7 @@ export default {
           action: 'https://www.instagram.com/ri_iki/?hl=en',
           profilePic: 'kariki.jpg',
         },
+
       ],
     }
   },
