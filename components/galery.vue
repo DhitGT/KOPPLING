@@ -74,7 +74,6 @@ export default {
   data() {
     return {
       itemGallery: [
-        'choirulrizal.jpg',
         'fest3.jpg',
         'fest4.jpg',
         'fest5.jpg',

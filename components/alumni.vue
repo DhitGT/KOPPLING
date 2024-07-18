@@ -41,10 +41,16 @@ export default {
           name: '@ri_iki',
           gen: 'Gen II',
           imgUrl: 'kariki.jpg',
-          action: 'https://www.instagram.com/ri_iki/?hl=en',
+          action: 'https://www.instagram.com/ri_iki/',
           profilePic: 'kariki.jpg',
         },
-
+        {
+          name: '@faturhmnfr',
+          gen: 'Gen -',
+          imgUrl: 'kafatur.jpg',
+          action: 'https://www.instagram.com/faturhmnfr/',
+          profilePic: 'kafaturpfp.jpg',
+        },
       ],
     }
   },

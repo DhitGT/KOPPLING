@@ -73,7 +73,6 @@ export default {
         'bgJumbo3.jpg',
         'bgJumbo4.jpg',
         'bgJumbo5.jpg',
-        'choirulrizal.jpg',
         'mandala3.jpg',
 
         // Add more image URLs here
