@@ -7,7 +7,7 @@
         <div class="flex items-center">
           <div class="flex-shrink-0">
             <img
-              class="w-10 h-10 rounded-full object-cover"
+              class="w-10 h-10 rounded-full border-2 border-solid border-[#F1FDF3] object-cover"
               :src="item.profilePic"
             />
           </div>

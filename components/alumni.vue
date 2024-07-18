@@ -51,6 +51,13 @@ export default {
           action: 'https://www.instagram.com/faturhmnfr/',
           profilePic: 'kafaturpfp.jpg',
         },
+        {
+          name: '@dfsyaa_',
+          gen: 'Gen VII',
+          imgUrl: 'kadaffa.jpg',
+          action: 'https://www.instagram.com/dfsyaa_/',
+          profilePic: 'kadaffapfp.jpg',
+        },
       ],
     }
   },
