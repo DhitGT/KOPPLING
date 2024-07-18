@@ -45,8 +45,15 @@ export default {
           profilePic: 'kariki.jpg',
         },
         {
+          name: '@choirul_rizall',
+          gen: 'Gen VI',
+          imgUrl: 'karizal.jpg',
+          action: 'https://www.instagram.com/p/CpHB6M0r8u2/?hl=en',
+          profilePic: 'karizalpfp.jpg',
+        },
+        {
           name: '@faturhmnfr',
-          gen: 'Gen -',
+          gen: 'Gen VII',
           imgUrl: 'kafatur.jpg',
           action: 'https://www.instagram.com/faturhmnfr/',
           profilePic: 'kafaturpfp.jpg',

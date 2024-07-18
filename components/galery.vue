@@ -115,6 +115,7 @@ export default {
         'kariki.jpg',
         'kafatur.jpg',
         'kadaffa.jpg',
+        'karizal.jpg',
       ],
       imageDialog: false,
       selectedImage: '',
