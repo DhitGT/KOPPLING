@@ -31,11 +31,18 @@ export default {
       itemAlumni: [
         {
           name: '@choirul_rizall',
-          gen: 'Gen VI',
+          gen: 'Gen VII',
           imgUrl: 'choirulrizal.jpg',
           action:
             'https://www.instagram.com/p/Ci8GVCKvUjK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-          profilePic: 'https://placehold.co/300',
+          profilePic: 'karizalpfp.jpg',
+        },
+        {
+          name: '@ri_iki',
+          gen: 'Gen II',
+          imgUrl: 'kariki.jpg',
+          action: 'https://www.instagram.com/ri_iki/?hl=en',
+          profilePic: 'kariki.jpg',
         },
         {
           name: 'Koppling',
