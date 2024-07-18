@@ -44,22 +44,6 @@ export default {
           action: 'https://www.instagram.com/ri_iki/?hl=en',
           profilePic: 'kariki.jpg',
         },
-        {
-          name: 'Koppling',
-          gen: 'Gen X',
-          imgUrl: 'bgJumbo2.jpg',
-          action:
-            'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-          profilePic: 'https://placehold.co/300',
-        },
-        {
-          name: 'Koppling',
-          gen: 'Gen X',
-          imgUrl: 'bgJumbo3.jpg',
-          action:
-            'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-          profilePic: 'https://placehold.co/300',
-        },
       ],
     }
   },
