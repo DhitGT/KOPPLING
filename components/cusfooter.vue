@@ -70,12 +70,22 @@
             <ul>
               <li class="mb-4 flex items-center">
                 <v-icon class="text-white mr-2">mdi-eye-outline</v-icon>
-                <a href="https://www.cutercounter.com/" target="_blank"
-                  ><img
-                    src="https://www.cutercounter.com/hits.php?id=hmxppckp&nd=7&style=3"
-                    border="0"
-                    alt="visitor counter"
-                /></a>
+                <div class="flex gap-2">
+                  <a href="https://www.cutercounter.com/" target="_blank"
+                    ><img
+                      src="https://www.cutercounter.com/hits.php?id=hmxppckp&nd=7&style=37"
+                      border="0"
+                      alt="visitor counter"
+                    />
+                  </a>
+
+                  <a href="https://www.cutercounter.com/" target="_blank"
+                    ><img
+                      src="https://www.cutercounter.com/hits.php?id=hexppccp&nd=5&style=37"
+                      border="0"
+                      alt="visitor counter"
+                  /></a>
+                </div>
               </li>
             </ul>
           </div>
