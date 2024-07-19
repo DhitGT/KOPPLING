@@ -1,42 +1,72 @@
 <template>
-  <div class="my-12 pa-6">
-    <v-container></v-container>
-    <v-container>
-      <div class="flex flex-col items-center justify-center">
-        <span class="text-4xl font-bold mb-5">Alumni Kami</span>
-        <p class="mb-3 font-normal text-lg text-gray-600">
-          Di bawah ini adalah gambar-gambar kaka-kaka alumni KOPPLING yang masih
-          aktif mengikuti berbagai acara dari KOPPLING, serta masih sering
-          membimbing anggota KOPPLING.
-        </p>
-      </div>
-    </v-container>
-    <v-container class="overflow-scroll md:overflow-auto">
-      <div
-        class="wrapper flex w-max md:grid gap-4 justify-items-stretch md:grid-cols-4 rounded-lg p-2 content-left self-center"
-      >
-        <alumni-card
-          v-for="(item, i) in itemAlumni"
-          :item="item"
-          :key="`alumni-${i}`"
-        />
-      </div>
-    </v-container>
+  <div class="my-12">
+    <div class="pa-6">
+      <v-container>
+        <div class="flex flex-col items-center justify-center">
+          <span class="text-4xl font-bold mb-5">Alumni Kami</span>
+          <p class="mb-3 font-normal text-lg text-gray-600">
+            Di bawah ini adalah kaka-kaka alumni KOPPLING yang masih aktif
+            mengikuti berbagai acara dari KOPPLING, serta masih sering
+            membimbing anggota KOPPLING.
+          </p>
+        </div>
+      </v-container>
+    </div>
+
+    <div class="bg-[#D1E9D2]">
+      <v-container class="bg-[#D1E9D2] py-6">
+        <carousel
+          paginationColor="gray"
+          paginationActiveColor="black"
+          ref="carousel"
+          :per-page-custom="[
+            [320, 1],
+            [768, 4],
+          ]"
+          :mouse-drag="true"
+          :pagination-enabled="true"
+        >
+          <slide
+            v-if="indexPage > 1"
+            style="padding-right: 10px; padding-right: 10px"
+            class="flex items-center justify-center w-full h-100 pa-1"
+          >
+          </slide>
+          <slide
+            style="padding-right: 10px; padding-right: 10px"
+            v-for="(item, i) in itemAlumni"
+            :key="`alumni-${i}`"
+          >
+            <alumni-card :item="item" />
+          </slide>
+          <slide
+            v-if="itemAlumni.length === 7 && originalItemAlumni.length > 7"
+            style="padding-right: 10px; padding-right: 10px"
+            class="flex items-center justify-center w-full h-100 pa-1"
+          >
+          </slide>
+        </carousel>
+      </v-container>
+    </div>
   </div>
 </template>
+
 <script>
+import { Carousel, Slide } from 'vue-carousel'
+
 export default {
+  components: {
+    Carousel,
+    Slide,
+  },
   data() {
     return {
-      // {
-      //   name: '@choirul_rizall',
-      //   gen: 'Gen -',
-      //   imgUrl: 'choirulrizal.jpg',
-      //   action:
-      //     'https://www.instagram.com/p/Ci8GVCKvUjK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-      //   profilePic: 'karizalpfp.jpg',
-      // },
-      itemAlumni: [
+      itemAlumni: [],
+      windowWidth: 0,
+      startIndex: 0,
+      indexPage: 1,
+      isNext: false,
+      originalItemAlumni: [
         {
           name: '@ri_iki',
           gen: 'Gen II',
@@ -45,11 +75,32 @@ export default {
           profilePic: 'kariki.jpg',
         },
         {
+          name: '@naufal121m',
+          gen: 'Gen III',
+          imgUrl: 'kanaufal.jpg',
+          action: 'https://www.instagram.com/p/Cg6iQD_L6XX/',
+          profilePic: 'kanaufalpfp.jpg',
+        },
+        {
+          name: '@arsitaa.a',
+          gen: 'Gen VI',
+          imgUrl: 'kaarsita.jpg',
+          action: 'https://www.instagram.com/arsitaa.a/',
+          profilePic: 'kaarsitapfp.jpg',
+        },
+        {
           name: '@choirul_rizall',
           gen: 'Gen VI',
           imgUrl: 'karizal.jpg',
           action: 'https://www.instagram.com/p/CpHB6M0r8u2/?hl=en',
           profilePic: 'karizalpfp.jpg',
+        },
+        {
+          name: '@adha_ysn',
+          gen: 'Gen VII',
+          imgUrl: 'kaadha.jpg',
+          action: 'https://www.instagram.com/adha_ysn/',
+          profilePic: 'kaadhapfp.jpg',
         },
         {
           name: '@faturhmnfr',
@@ -66,7 +117,99 @@ export default {
           profilePic: 'kadaffapfp.jpg',
         },
       ],
+      currentPage: 0,
     }
+  },
+  mounted() {
+    this.getWindowWidth()
+    window.addEventListener('resize', this.getWindowWidth)
+    this.$refs.carousel.$on('pageChange', this.onPageChange)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.getWindowWidth)
+    this.$refs.carousel.$off('pageChange', this.onPageChange)
+  },
+
+  methods: {
+    onPageChange(page) {
+      this.currentPage = page // Update the current page
+      console.log('Page changed to', page)
+      if (page === 7 && this.indexPage == 1) {
+        console.log('next')
+        this.showNextItems()
+      } else if (page === 0 && this.indexPage != 1) {
+        console.log('prev')
+        this.showPreviousItems()
+      } else if (page === 8 && this.indexPage != 1) {
+        this.showNextItems()
+      }
+    },
+    prev() {
+      this.$refs.carousel.goToPage(this.$refs.carousel.currentPage - 1)
+    },
+    next() {
+      this.$refs.carousel.goToPage(this.$refs.carousel.currentPage + 1)
+    },
+    getWindowWidth() {
+      this.windowWidth = window.innerWidth
+      if (this.windowWidth < 768) {
+        this.itemAlumni = this.originalItemAlumni.slice(
+          this.startIndex,
+          this.startIndex + 7
+        )
+      } else {
+        this.itemAlumni = this.originalItemAlumni
+      }
+    },
+    showNextItems() {
+      this.indexPage++
+      this.$refs.carousel.goToPage(1)
+      this.startIndex += 7
+      this.itemAlumni = this.originalItemAlumni.slice(
+        this.startIndex,
+        this.startIndex + 7
+      )
+    },
+    showPreviousItems() {
+      this.indexPage--
+      if (this.indexPage == 1) {
+        this.$refs.carousel.goToPage(0)
+      } else {
+        this.$refs.carousel.goToPage(1)
+      }
+      this.startIndex -= 7
+      this.itemAlumni = this.originalItemAlumni.slice(
+        this.startIndex,
+        this.startIndex + 7
+      )
+    },
   },
 }
 </script>
+
+<style scoped>
+.carousel__pagination-indicator {
+  width: 6px;
+  height: 6px;
+  margin: 0 2px;
+  background-color: rgb(206, 0, 0); /* Adjust the color as needed */
+}
+
+.carousel__arrow {
+  z-index: 1; /* Ensure the buttons are on top of the card image */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.carousel__arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.carousel__arrow--left {
+  left: 10px;
+}
+.carousel__arrow--right {
+  right: 10px;
+}
+</style>
