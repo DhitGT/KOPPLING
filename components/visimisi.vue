@@ -4,7 +4,7 @@
       class="wrapper w-max-[90vw] mx-auto grid gap-4 mt-6 grid-cols-1 md:grid-cols-2"
     >
       <div
-        class="max-w-full p-6 rounded-lg shadow bg-[#80AF81] border-2 border-[#508D4E] transition-all duration-1000 sections"
+        class="max-w-full shadow-inner shadow-black p-6 rounded-lg bg-[#80AF81] border-2 border-[#508D4E] transition-all duration-1000 sections"
       >
         <a href="#">
           <h5
@@ -21,7 +21,7 @@
         </p>
       </div>
       <div
-        class="max-w-full p-6 rounded-lg shadow bg-[#80AF81] border-2 border-[#508D4E] transition-all duration-1000 sections"
+        class="max-w-full shadow-inner shadow-black p-6 rounded-lg bg-[#80AF81] border-2 border-[#508D4E] transition-all duration-1000 sections"
       >
         <a href="#">
           <h5

@@ -1,13 +1,13 @@
 <template>
-  <div class="min-w-fit">
+  <div class="min-w-fit shadow-sm rounded-lg shadow-black">
     <div
-      class="min-w-fit md:max-w-sm border rounded-lg shadow bg-[#80AF81] border-[#D1E9D2]"
+      class="min-w-fit md:max-w-sm border rounded-lg shadow bg-[#80AF81] border-[#D1E9D2] hover:bg-[#508D4E] cursor-pointer"
     >
       <div class="p-5 pb-0">
         <div class="flex items-center">
           <div class="flex-shrink-0">
             <img
-              class="w-10 h-10 rounded-full border-2 border-solid border-[#F1FDF3] object-cover"
+              class="w-12 h-12 rounded-full border-2 border-solid border-[#F1FDF3] object-cover"
               :src="item.profilePic"
             />
           </div>

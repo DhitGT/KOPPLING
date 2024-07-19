@@ -29,12 +29,12 @@
         >
           <slide
             v-if="indexPage > 1"
-            style="padding-right: 10px; padding-right: 10px"
+            style="padding-right: 10px; padding-left: 10px"
             class="flex items-center justify-center w-full h-100 pa-1"
           >
           </slide>
           <slide
-            style="padding-right: 10px; padding-right: 10px"
+            style="padding: 10px"
             v-for="(item, i) in itemAlumni"
             :key="`alumni-${i}`"
           >
@@ -42,7 +42,7 @@
           </slide>
           <slide
             v-if="itemAlumni.length === 7 * perPage && dotsTotal > 7"
-            style="padding-right: 10px; padding-right: 10px"
+            style="padding-right: 10px; padding-left: 10px"
             class="flex items-center justify-center w-full h-100 pa-1"
           >
           </slide>

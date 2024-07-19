@@ -1,18 +1,13 @@
 <template>
-  <div>
-    <dialog-kegiatan
-      @close="handleClose"
-      :item="item"
-      :show="dialog.show"
-    ></dialog-kegiatan>
+  <div class="h-full rounded-lg">
     <div
       @click="handleClick"
       href="#"
-      class="flex flex-col min-h-[100%] items-center rounded-lg shadow w-[70vw] border md:w-max border-[#508D4E] bg-[#80AF81] hover:bg-[#508D4E] cursor-pointer"
+      class="flex min-w-fit md:max-w-sm flex-col h-full items-center rounded-lg shadow border border-[#F1FDF3] bg-[#80AF81] hover:bg-[#508D4E] cursor-pointer"
     >
-      <div class="md:w-full pa-2 md:h-full overflow-hidden rounded-lg">
+      <div class="ma-2 overflow-hidden rounded-lg">
         <img
-          class="object-cover aspect-square md:w-full rounded-lg md:h-full"
+          class="object-cover w-full aspect-square rounded-lg"
           :src="item.imgUrl"
           alt=""
         />
@@ -41,6 +36,11 @@
         <!-- Added button for viewing details -->
       </div>
     </div>
+    <dialog-kegiatan
+      @close="handleClose"
+      :item="item"
+      :show="dialog.show"
+    ></dialog-kegiatan>
   </div>
 </template>
 

@@ -68,8 +68,8 @@ export default {
   data() {
     return {
       backgrounds: [
-        'bgJumbo.jpg',
         'bgJumbo2.jpg',
+        'bgJumbo.jpg',
         'bgJumbo3.jpg',
         'bgJumbo4.jpg',
         'bgJumbo5.jpg',

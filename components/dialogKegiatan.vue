@@ -91,22 +91,15 @@
 
     <!-- Dialog for fullscreen image -->
     <v-dialog v-model="imageDialog" fullscreen hide-overlay>
+      <v-toolbar dark color="#508D4E">
+        <v-btn icon dark @click="closeImageDialog">
+          <v-icon>mdi-close</v-icon>
+        </v-btn>
+      </v-toolbar>
       <v-card>
-        <v-toolbar dark color="#508D4E">
-          <v-btn icon dark @click="closeImageDialog">
-            <v-icon>mdi-close</v-icon>
-          </v-btn>
-        </v-toolbar>
-        <v-img :src="selectedImage" contain max-height="90vh">
-          <template v-slot:append>
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn icon dark @click="closeImageDialog">
-                <v-icon>mdi-close</v-icon>
-              </v-btn>
-            </v-card-actions>
-          </template>
-        </v-img>
+        <div class="flex items-center justify-center min-h-[85vh]">
+          <v-img :src="selectedImage" contain max-height="90vh"> </v-img>
+        </div>
       </v-card>
     </v-dialog>
   </v-row>
