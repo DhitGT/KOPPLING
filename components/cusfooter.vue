@@ -94,8 +94,8 @@
       <hr
         class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
       />
-      <div>
-        <span class="text-sm text-gray-200 sm:text-center"
+      <div class="w-full flex items-center justify-center mx-auto">
+        <span class="text-sm text-gray-200 text-center"
           >© 2024
           <a href="https://koppling.site" class="hover:underline text-white"
             ><span class="text-white">koppling.site</span></a
