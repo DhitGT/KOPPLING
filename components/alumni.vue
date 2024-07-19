@@ -21,7 +21,8 @@
           ref="carousel"
           :per-page-custom="[
             [320, 1],
-            [768, 4],
+            [768, 3],
+            [1200, 4],
           ]"
           :mouse-drag="true"
           :pagination-enabled="true"
@@ -40,7 +41,7 @@
             <alumni-card :item="item" />
           </slide>
           <slide
-            v-if="itemAlumni.length === 7 && originalItemAlumni.length > 7"
+            v-if="itemAlumni.length === 7 * perPage && dotsTotal > 7"
             style="padding-right: 10px; padding-right: 10px"
             class="flex items-center justify-center w-full h-100 pa-1"
           >
@@ -130,6 +131,29 @@ export default {
     this.$refs.carousel.$off('pageChange', this.onPageChange)
   },
 
+  computed: {
+    dotsTotal() {
+      this.windowWidth = window.innerWidth
+      if (this.windowWidth >= 320 && this.windowWidth < 768) {
+        return this.originalItemAlumni.length / 1
+      } else if (this.windowWidth >= 768 && this.windowWidth < 1200) {
+        return this.originalItemAlumni.length / 3
+      } else if (this.windowWidth >= 1200) {
+        return this.originalItemAlumni.length / 4
+      }
+    },
+    perPage() {
+      this.windowWidth = window.innerWidth
+      if (this.windowWidth >= 320 && this.windowWidth < 768) {
+        return 1 // 1 item per page for screens smaller than 320px
+      } else if (this.windowWidth >= 768 && this.windowWidth < 1200) {
+        return 3 // 3 items per page for screens between 320px and 767px
+      } else if (this.windowWidth >= 1200) {
+        return 4 // 4 items per page for screens between 768px and 1199px
+      }
+    },
+  },
+
   methods: {
     onPageChange(page) {
       this.currentPage = page // Update the current page
@@ -152,10 +176,11 @@ export default {
     },
     getWindowWidth() {
       this.windowWidth = window.innerWidth
-      if (this.windowWidth < 768) {
+
+      if (this.dotsTotal > 7) {
         this.itemAlumni = this.originalItemAlumni.slice(
           this.startIndex,
-          this.startIndex + 7
+          this.startIndex + 7 * this.perPage
         )
       } else {
         this.itemAlumni = this.originalItemAlumni
@@ -164,10 +189,10 @@ export default {
     showNextItems() {
       this.indexPage++
       this.$refs.carousel.goToPage(1)
-      this.startIndex += 7
+      this.startIndex += 7 * this.perPage
       this.itemAlumni = this.originalItemAlumni.slice(
         this.startIndex,
-        this.startIndex + 7
+        this.startIndex + 7 * this.perPage
       )
     },
     showPreviousItems() {
@@ -177,10 +202,10 @@ export default {
       } else {
         this.$refs.carousel.goToPage(1)
       }
-      this.startIndex -= 7
+      this.startIndex -= 7 * this.perPage
       this.itemAlumni = this.originalItemAlumni.slice(
         this.startIndex,
-        this.startIndex + 7
+        this.startIndex + 7 * this.perPage
       )
     },
   },
