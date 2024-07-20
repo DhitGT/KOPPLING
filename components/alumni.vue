@@ -117,6 +117,13 @@ export default {
           action: 'https://www.instagram.com/dfsyaa_/',
           profilePic: 'kadaffapfp.jpg',
         },
+        {
+          name: '@deviany_azhra',
+          gen: 'Gen IV',
+          imgUrl: 'kadevi.jpg',
+          action: 'https://www.instagram.com/deviany_azhra/?hl=en',
+          profilePic: 'kadevipfp.jpg',
+        },
       ],
       currentPage: 0,
     }
