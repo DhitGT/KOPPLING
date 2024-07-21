@@ -20,7 +20,6 @@
 <script>
 export default {
   mounted() {
-    // Redirect to Google Form link
     window.location.href = 'https://qrco.de/bf7MKK'
   },
 }
