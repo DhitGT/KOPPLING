@@ -20,7 +20,8 @@
 <script>
 export default {
   mounted() {
-    window.location.href = 'https://qrco.de/bf7MKK'
+    window.location.href =
+      'https://docs.google.com/forms/d/e/1FAIpQLSdH5ainp7B7cj1kLM4UuAsTtGDs5U2RwPFDc1kRVJUoPLDn9g/viewform'
   },
 }
 </script>
