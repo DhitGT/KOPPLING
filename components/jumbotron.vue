@@ -35,7 +35,7 @@
             style="color: white"
             class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#80AF81] hover:bg-[#508D4E]"
           >
-            <span class="text-white"> Join Koppling </span>
+            <span class="text-white"> Form Pendaftaran </span>
             <svg
               class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
               aria-hidden="true"
