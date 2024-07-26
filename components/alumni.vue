@@ -54,7 +54,6 @@
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
-// sgdgdfgdfgdf
 export default {
   components: {
     Carousel,
