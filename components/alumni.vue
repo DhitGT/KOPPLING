@@ -170,7 +170,7 @@ export default {
 
   methods: {
     onPageChange(page) {
-      this.currentPage = page // Update the current page
+      this.currentPage = page 
       console.log('Page changed to', page)
       if (page === 7 && this.indexPage == 1) {
         console.log('next')
