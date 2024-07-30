@@ -161,16 +161,16 @@ export default {
       if (this.windowWidth >= 320 && this.windowWidth < 768) {
         return 1 // 1 item per page for screens smaller than 320px
       } else if (this.windowWidth >= 768 && this.windowWidth < 1200) {
-        return 3 // 3 items per page for screens between 320px and 767px
+        return 3 
       } else if (this.windowWidth >= 1200) {
-        return 4 // 4 items per page for screens between 768px and 1199px
+        return 4
       }
     },
   },
 
   methods: {
     onPageChange(page) {
-      this.currentPage = page 
+      this.currentPage = page
       console.log('Page changed to', page)
       if (page === 7 && this.indexPage == 1) {
         console.log('next')
