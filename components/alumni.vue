@@ -161,12 +161,15 @@ export default {
       if (this.windowWidth >= 320 && this.windowWidth < 768) {
         return 1 // 1 item per page for screens smaller than 320px
       } else if (this.windowWidth >= 768 && this.windowWidth < 1200) {
-        return 3 
+        return 3
       } else if (this.windowWidth >= 1200) {
         return 4
       }
     },
   },
+
+
+  // asdasdasdadasd
 
   methods: {
     onPageChange(page) {
