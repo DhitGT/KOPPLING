@@ -168,9 +168,6 @@ export default {
     },
   },
 
-
-  // asdasdasdadasd
-
   methods: {
     onPageChange(page) {
       this.currentPage = page
