@@ -231,11 +231,11 @@ export default {
   width: 6px;
   height: 6px;
   margin: 0 2px;
-  background-color: rgb(206, 0, 0); /* Adjust the color as needed */
+  background-color: rgb(206, 0, 0);
 }
 
 .carousel__arrow {
-  z-index: 1; /* Ensure the buttons are on top of the card image */
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   color: #fff;
