@@ -150,7 +150,7 @@ export default {
     return {
       isTop: true,
       isSidebarOpen: false,
-      offset: 100, 
+      offset: 100, //asdasdasdasdasdsadasdads
     }
   },
   methods: {
