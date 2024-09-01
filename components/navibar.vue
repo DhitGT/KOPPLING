@@ -150,9 +150,9 @@ export default {
     return {
       isTop: true,
       isSidebarOpen: false,
-      offset: 100, 
+      offset: 100,
     }
-  },
+  }, //sdfsdfsdfsdfsdfsdf
   methods: {
     handleScroll() {
       this.isTop = window.scrollY === 0
