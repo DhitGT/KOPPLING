@@ -1,5 +1,5 @@
 <template>
-  <v-row justify="center  my-2" style="z-index: 9999">
+  <v-row class="justify-center my-2" style="z-index: 9999">
     <v-dialog
       v-model="tampilkan"
       fullscreen

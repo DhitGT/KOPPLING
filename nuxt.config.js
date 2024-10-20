@@ -5,13 +5,13 @@ export default {
   ssr: false,
 
   server: {
-    host: 'localhost', // default: localhost
+    host: '192.168.137.1', // default: localhost
     port: 3000         // default: 3000
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - koppling',
+    titleTemplate: '%s',
     title: 'koppling',
     htmlAttrs: {
       lang: 'en',
