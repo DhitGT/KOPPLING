@@ -70,10 +70,12 @@ export default {
     return {
       backgrounds: [
         'bgJumbo2.jpg',
+        'goa_tawanan_7.jpg',
         'bgJumbo.jpg',
         'bgJumbo3.jpg',
         'bgJumbo4.jpg',
         'bgJumbo5.jpg',
+        'w4c_cleanup_3.jpg',
         'mandala3.jpg',
 
         // Add more image URLs here

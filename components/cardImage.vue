@@ -12,7 +12,15 @@
           alt=""
         />
       </div>
-      <div class="flex flex-col justify-between p-4 leading-normal">
+      <div class="flex flex-col justify-start p-4 leading-normal">
+        <div class="flex justify-space-between" style="max-height: fit-content">
+          <p class="font-normal md:text-sm text-xs text-[#F1FDF3]">
+            Gen {{ item.gen }}
+          </p>
+          <p class="font-normal md:text-sm text-xs text-[#F1FDF3]">
+            {{ item.date }}
+          </p>
+        </div>
         <h5
           class="md:mb-2 md:text-2xl text-lg font-bold tracking-tight text-[#F1FDF3]"
         >
@@ -29,7 +37,7 @@
         </div>
         <button
           @click="handleClick"
-          class="text-[#F1FDF3] text-sm hover:text-gray-300"
+          class="text-[#F1FDF3] text-sm hover:text-gray-300 mt-auto"
         >
           Lihat Detail
         </button>

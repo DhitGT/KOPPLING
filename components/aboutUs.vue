@@ -21,6 +21,5 @@
       </div>
     </v-container>
     <visimisi />
-    //gg
   </div>
 </template>
