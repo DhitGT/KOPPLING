@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div ref="imgArea" class="p-4">
+    <div ref="imgArea" class="p-4 bg-[#f1fdf3]">
       <div class="wrapper mx-auto bg-white p-4 rounded-xl flex-col">
         <div class="flex items-start text-start self-start p-1 gap-3">
           <img
@@ -83,7 +83,7 @@ export default {
           const dataUrl = await toPng(imgArea, {
             quality: 1, // Set quality to highest
             pixelRatio: 3, // Increase pixel ratio for HD
-            bgcolor: '#ffffff00', // Set background color to white
+            bgcolor: '#f1fdf3', // Set background color to white
           })
 
           const link = document.createElement('a')
