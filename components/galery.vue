@@ -8,7 +8,7 @@
         >
           <div
             :key="`dialog-gallery-${i}`"
-            class="rounded-lg border border-[#D6EFD8] cursor-pointer"
+            class="relative rounded-lg border border-[#D6EFD8] cursor-pointer"
             v-for="(item, i) in displayedImages"
             @click="openImageDialog(imgUrls[item])"
           >
@@ -23,6 +23,18 @@
                   height="100%"
                 ></v-skeleton-loader>
               </template>
+              <!-- Share icon -->
+              <router-link
+                :to="`/s/${item.split('.')[0]}`"
+                class="absolute top-2 right-2"
+              >
+                <v-icon
+                  color="white"
+                  size="20"
+                  class="text-white text-xs rounded-full p-1"
+                  >mdi-share-variant</v-icon
+                >
+              </router-link>
             </v-img>
           </div>
         </div>
@@ -51,13 +63,14 @@
         </v-toolbar>
         <v-card class="pt-16">
           <div class="flex items-center justify-center min-h-[85vh]">
-            <v-img :src="selectedImage" contain max-height="90vh"> </v-img>
+            <v-img :src="selectedImage" contain max-height="90vh"></v-img>
           </div>
         </v-card>
       </v-dialog>
     </v-container>
   </div>
 </template>
+
 
 <script>
 import { storage } from '~/plugins/firebase'
