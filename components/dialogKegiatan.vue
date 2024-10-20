@@ -66,13 +66,13 @@
             <div class="gallery grid grid-cols-3 gap-2 md:grid-cols-4">
               <div
                 :key="`dialog-gallery-${i}`"
-                class="rounded-lg border border-[#508D4E] cursor-pointer"
+                class="relative rounded-lg border border-[#508D4E] cursor-pointer"
                 v-for="(item, i) in item.galery"
-                @click="openImageDialog(imgUrls[item])"
               >
                 <v-img
                   class="rounded-lg object-cover aspect-square"
                   :src="imgUrls[item]"
+                  @click="openImageDialog(imgUrls[item])"
                 >
                   <template #placeholder>
                     <v-skeleton-loader
@@ -82,6 +82,12 @@
                     ></v-skeleton-loader>
                   </template>
                 </v-img>
+                <a
+                  :href="`/s/${item.split('.')[0]}`"
+                  class="absolute top-2 right-2"
+                >
+                  <v-icon color="white" size="20">mdi-share-variant</v-icon>
+                </a>
               </div>
             </div>
           </div>
