@@ -8,7 +8,6 @@
         alt="Shared Image"
         @load="onImageLoad"
       />
-
       <div v-else>Loading...</div>
     </div>
     <v-btn @click="downloadImage">Download Image</v-btn>
@@ -22,18 +21,23 @@ import { getDownloadURL, ref as storageRef } from 'firebase/storage'
 import html2canvas from 'html2canvas' // Import html2canvas
 
 export default {
+  data() {
+    return {
+      imageUrl: null, // Initialize imageUrl to null
+      imageName: '', // Store the image name
+    }
+  },
   async asyncData({ params }) {
     const imageName = params.image // Get dynamic image name from route
-    // alert(imageName);
     const fileRef = storageRef(storage, `${imageName}.jpg`) // Adjust the path accordingly
 
     // Fetch the image URL from Firebase Storage
     try {
       const imageUrl = await getDownloadURL(fileRef)
-      return { imageUrl }
+      return { imageUrl, imageName } // Return both imageUrl and imageName
     } catch (error) {
       console.error('Error fetching image:', error)
-      return { imageUrl: null } // Return null if there's an error
+      return { imageUrl: null, imageName } // Return null if there's an error
     }
   },
   methods: {
@@ -46,7 +50,7 @@ export default {
         const canvas = await html2canvas(imgArea) // Convert the img-area to canvas
         const link = document.createElement('a')
         link.href = canvas.toDataURL('image/jpeg') // Convert canvas to data URL
-        link.download = 'downloaded_image.jpg' // Name of the downloaded file
+        link.download = `${this.imageName}.jpg` // Name of the downloaded file
         link.click()
       } else {
         console.error('Image area not found')
@@ -58,8 +62,8 @@ export default {
 
 <style>
 .img-area {
-  /* Optional styling for the image area */
   display: flex;
+  flex-direction: column; /* Ensure flex column is applied */
   justify-content: center;
   align-items: center;
   margin: 20px 0;
