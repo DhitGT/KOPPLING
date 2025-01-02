@@ -133,6 +133,8 @@ export default {
         'plogging8.jpg',
         'plogging9.jpg',
         'plogging10.jpg',
+        'butik1.jpg',
+        'halimun1.jpg',
         'kariki.jpg',
         'kafatur.jpg',
         'kadaffa.jpg',

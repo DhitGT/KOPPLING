@@ -82,12 +82,7 @@
                     ></v-skeleton-loader>
                   </template>
                 </v-img>
-                <a
-                  :href="`/s/${item.split('.')[0]}`"
-                  class="absolute top-2 right-2"
-                >
-                  <v-icon color="white" size="20">mdi-share-variant</v-icon>
-                </a>
+
               </div>
             </div>
           </div>
