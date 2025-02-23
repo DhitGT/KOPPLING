@@ -72,6 +72,7 @@
                 <v-img
                   class="rounded-lg object-cover aspect-square"
                   :src="imgUrls[item]"
+                  @click="openImageDialog(imgUrls[item])"
                 >
                   <template #placeholder>
                     <v-skeleton-loader
