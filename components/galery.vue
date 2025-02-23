@@ -61,9 +61,9 @@
             <v-icon>mdi-close</v-icon>
           </v-btn>
         </v-toolbar>
-        <v-card class="pt-16">
-          <div class="flex items-center justify-center min-h-[85vh]">
-            <v-img :src="selectedImage" contain max-height="90vh"></v-img>
+        <v-card class="pt-16" color="black">
+          <div class="flex items-center bg-black justify-center min-h-[85vh]">
+            <v-img :src="selectedImage" contain max-height="100vh"></v-img>
           </div>
         </v-card>
       </v-dialog>
@@ -139,6 +139,13 @@ export default {
         'kafatur.jpg',
         'kadaffa.jpg',
         'karizal.jpg',
+        'diklat12-1.jpg',
+        'diklat12-2.jpg',
+        'diklat12-3.jpg',
+        'diklat12-4.jpg',
+        'diklat12-5.jpg',
+        'diklat12-6.jpg',
+        'diklat12-8.jpg',
       ],
       imageDialog: false,
       selectedImage: '',

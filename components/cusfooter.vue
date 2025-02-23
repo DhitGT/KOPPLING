@@ -73,15 +73,7 @@
                 <div class="flex gap-2">
                   <a href="https://www.cutercounter.com/" target="_blank"
                     ><img
-                      src="https://www.cutercounter.com/hits.php?id=hmxppckp&nd=7&style=37"
-                      border="0"
-                      alt="visitor counter"
-                    />
-                  </a>
-
-                  <a href="https://www.cutercounter.com/" target="_blank"
-                    ><img
-                      src="https://www.cutercounter.com/hits.php?id=hexppccp&nd=5&style=37"
+                      src="https://counter6.optistats.ovh/private/freecounterstat.php?c=kzgmdbdnxb6nfpgtmgpcyfd7ulpt6eze"
                       border="0"
                       alt="visitor counter"
                   /></a>
@@ -97,7 +89,7 @@
       />
       <div class="w-full flex items-center justify-center mx-auto">
         <span class="text-sm text-gray-200 text-center"
-          >© 2024
+          >© 2025
           <a href="https://koppling.site" class="hover:underline text-white"
             ><span class="text-white">koppling.site</span></a
           >. All Rights Reserved.</span

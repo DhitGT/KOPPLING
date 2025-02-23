@@ -28,7 +28,7 @@
               @click="openImageDialog(item.imgUrl)"
             >
               <div
-                class="absolute rounded-t-xl inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-black"
+                class="absolute rounded-t-xl inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.07)] to-[#0000009b]"
               ></div>
               <v-img
                 class="fixed top-4 rounded-full w-8 h-8 left-4"
@@ -72,7 +72,6 @@
                 <v-img
                   class="rounded-lg object-cover aspect-square"
                   :src="imgUrls[item]"
-                  @click="openImageDialog(imgUrls[item])"
                 >
                   <template #placeholder>
                     <v-skeleton-loader
@@ -81,8 +80,19 @@
                       height="100%"
                     ></v-skeleton-loader>
                   </template>
+                  <!-- Share icon -->
+                  <router-link
+                    :to="`/s/${item.split('.')[0]}`"
+                    class="absolute top-2 right-2"
+                  >
+                    <v-icon
+                      color="white"
+                      size="20"
+                      class="text-white text-xs rounded-full p-1"
+                      >mdi-share-variant</v-icon
+                    >
+                  </router-link>
                 </v-img>
-
               </div>
             </div>
           </div>
@@ -97,9 +107,11 @@
           <v-icon>mdi-close</v-icon>
         </v-btn>
       </v-toolbar>
-      <v-card>
-        <div class="flex items-center justify-center min-h-[85vh]">
-          <v-img :src="selectedImage" contain max-height="90vh"> </v-img>
+      <v-card color="black">
+        <div
+          class="flex items-center bg-black border-0 justify-center min-h-[85vh]"
+        >
+          <v-img :src="selectedImage" contain max-height="100vh"> </v-img>
         </div>
       </v-card>
     </v-dialog>

@@ -3,7 +3,7 @@
     <div
       @click="handleClick"
       href="#"
-      class="flex min-w-fit md:max-w-sm flex-col h-full items-center rounded-lg shadow border border-[#F1FDF3] bg-[#80AF81] hover:bg-[#508D4E] cursor-pointer"
+      class="flex min-w-fit md:max-w-sm flex-col h-full items-center rounded-xl shadow border border-[#F1FDF3] bg-[#80AF81] hover:bg-[#508D4E] cursor-pointer"
     >
       <div class="ma-2 overflow-hidden rounded-lg">
         <img
@@ -29,8 +29,8 @@
         <div class="overflow-y-hidden max-h-[5vh] md:max-h-max">
           <p class="mb-3 font-normal md:text-sm text-xs text-[#F1FDF3]">
             {{
-              item.descript.length > 50
-                ? item.descript.slice(0, 50) + ' Baca Selengkapnya..'
+              item.descript.length > 60
+                ? item.descript.slice(0, 60) + ' ...'
                 : item.descript
             }}
           </p>

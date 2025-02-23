@@ -19,22 +19,36 @@
           v-if="imageUrl"
           :src="imageUrl"
           alt="Shared Image"
+          ref="OriginalImgArea"
           @load="onImageLoad"
         />
         <div v-else>Loading...</div>
         <p class="text-xs">{{ fullUrl }}</p>
       </div>
     </div>
-    <div class="flex">
-      <v-btn @click="downloadImage" class="mx-auto">
-        <v-icon
-          color="black"
-          size="20"
-          class="text-white text-xs rounded-full p-1"
-          >mdi-content-save</v-icon
+    <div class="flex gap-2 justify-center">
+      <div>
+        <v-btn @click="downloadImage" class="mx-auto">
+          <v-icon
+            color="black"
+            size="20"
+            class="text-white text-xs rounded-full p-1"
+            >mdi-content-save</v-icon
+          >
+          Save Image</v-btn
         >
-        Save Image</v-btn
-      >
+      </div>
+      <div>
+        <v-btn @click="downloadOriginalImage" class="mx-auto">
+          <v-icon
+            color="black"
+            size="20"
+            class="text-white text-xs rounded-full p-1"
+            >mdi-content-save</v-icon
+          >
+          Save Original Image</v-btn
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -78,6 +92,27 @@ export default {
     },
     async downloadImage() {
       const imgArea = this.$refs.imgArea // Use ref to access the imgArea div
+      if (imgArea) {
+        try {
+          const dataUrl = await toPng(imgArea, {
+            quality: 1, // Set quality to highest
+            pixelRatio: 3, // Increase pixel ratio for HD
+            bgcolor: '#f1fdf3', // Set background color to white
+          })
+
+          const link = document.createElement('a')
+          link.href = dataUrl
+          link.download = `${this.imageName}.png` // Name of the downloaded file
+          link.click() // Trigger the download
+        } catch (error) {
+          console.error('Error generating image:', error)
+        }
+      } else {
+        console.error('Image area not found')
+      }
+    },
+    async downloadOriginalImage() {
+      const imgArea = this.$refs.OriginalImgArea // Use ref to access the imgArea div
       if (imgArea) {
         try {
           const dataUrl = await toPng(imgArea, {

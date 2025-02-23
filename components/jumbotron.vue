@@ -69,6 +69,7 @@ export default {
   data() {
     return {
       backgrounds: [
+        'diklat12-8.jpg',
         'bgJumbo2.jpg',
         'goa_tawanan_7.jpg',
         'bgJumbo.jpg',

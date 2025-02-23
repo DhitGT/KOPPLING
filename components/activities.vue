@@ -92,8 +92,28 @@ export default {
       itemActivities: [],
       originalItemActivities: [
         {
+          title: 'Pendidikan dan Pelatihan Gen-12 2025',
+          gen: 'X/XII',
+          location: 'Sumur Batu',
+          date: '22 Februari 2025',
+          imgUrl: 'diklat12-8.jpg',
+          action:
+            'https://www.instagram.com/p/C6nUgY2Lv54/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+          descript:
+            'Kegiatan Pendidikan dan Pelatihan Komunitas Pelajar Pecinta Lingkungan Gen 12 tahun 2025',
+          galery: [
+            'diklat12-1.jpg',
+            'diklat12-2.jpg',
+            'diklat12-3.jpg',
+            'diklat12-4.jpg',
+            'diklat12-5.jpg',
+            'diklat12-6.jpg',
+            'diklat12-8.jpg',
+          ],
+        },
+        {
           title: 'Mandalawangi Camping',
-          gen: 'VII',
+          gen: 'VII/X',
           location: 'Mandalawangi, Bogor',
           date: '30 September 2023',
           imgUrl: 'bgJumbo2.jpg',
@@ -138,7 +158,7 @@ export default {
         },
         {
           title: 'Waste 4 Change River Clean Up',
-          gen: 'XI/XI',
+          gen: 'X/XI',
           location: 'Sungai Pekayon, Bekasi',
           date: '25 September 2024',
           imgUrl: 'w4c_cleanup.jpg',
@@ -156,8 +176,8 @@ export default {
           ],
         },
         {
-          title: 'Koppling Outbond',
-          gen: 'IV',
+          title: 'Koppling Outbond 2024',
+          gen: 'IV/X/XI',
           location: 'Sumur Batu',
           date: '5 Mei 2024',
           imgUrl: 'bgJumbo.jpg',
@@ -178,7 +198,7 @@ export default {
         },
         {
           title: 'Pelatihan Vertical & Pengenalan Reptile',
-          gen: 'IX',
+          gen: 'IX/X/XI',
           location: 'SMKN 2 Bekasi, Bekasi',
           date: '12 Agustus 2023',
           imgUrl: 'bgJumbo3.jpg',
@@ -199,7 +219,7 @@ export default {
         },
         {
           title: 'Kunjungan Ke Kini Farm Hidroponik',
-          gen: 'IX-X',
+          gen: 'IX/X',
           location: 'Bantargebang',
           date: '31 Agustus 2023',
           imgUrl: 'kinifarm6.jpg',
@@ -220,7 +240,7 @@ export default {
         },
         {
           title: 'Plogging World Clean Up Day',
-          gen: 'X',
+          gen: 'IX/X',
           location: 'Bundaran HI, Jakarta Pusat',
           date: '28 Mei 2023',
           imgUrl: 'plogging1.jpg',

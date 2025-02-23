@@ -5,7 +5,7 @@ export default {
   ssr: false,
 
   server: {
-    host: '192.168.137.1', // default: localhost
+    host: 'localhost', // default: localhost
     port: 3000         // default: 3000
   },
 
