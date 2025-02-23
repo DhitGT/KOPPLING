@@ -108,7 +108,12 @@ export default {
             'diklat12-4.jpg',
             'diklat12-5.jpg',
             'diklat12-6.jpg',
+            'diklat12-7.jpg',
             'diklat12-8.jpg',
+            'diklat12-9.jpg',
+            'diklat12-10.jpg',
+            'diklat12-11.jpg',
+            'diklat12-12.jpg',
           ],
         },
         {
